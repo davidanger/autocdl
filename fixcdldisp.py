@@ -1,3 +1,5 @@
+# This is fix the CDL parameter display in the schematic view.
+# Design by Song 2018-09-15
 import re
 
 # Input file
