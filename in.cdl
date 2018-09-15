@@ -1,0 +1,173 @@
+.SUBCKT V5NBL_DCAP06A VDD VSS SUB
+*.PININFO SUB:B vdd:B vss:B
+*.NETEXPR vdd vdd vdd 
+*.NETEXPR vss vss vss 
+*.NETEXPR SUB SUB SUB 
+XX0 net1 net3 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 
++ length=2.16u width=900n option_vop=7.7
+XX1 vdd net1 net3 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=2.16u 
++ width=1.84u option_vop=7.7
+.ENDS
+
+.SUBCKT V5NBL_NITD24A A OE Z  VDD VSS SUB
+*.PININFO A:I OE:I Z:O SUB:B vdd:B vss:B
+*.NETEXPR vss vss vss 
+*.NETEXPR vdd vdd vdd 
+*.NETEXPR SUB SUB SUB 
+XX3 vss OE net4 vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=620n option_vop=7.7
+XX2 net4 OE vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=620n option_vop=7.7
+XX1 vss OE net4 vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=620n option_vop=7.7
+XX4 net4 OE vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=620n option_vop=7.7
+XX0 net3 OE vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX9 vss net3 net7 vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=650n option_vop=7.7
+XX10 net7 net3 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 
++ length=500n width=650n option_vop=7.7
+XX11 vss net3 net7 vss vdd SUB nch_svt_iso_nbl_5p0v m=1 
++ length=500n width=650n option_vop=7.7
+XX5 net4 A net5 vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=620n option_vop=7.7
+XX6 net5 A net4 vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=620n option_vop=7.7
+XX7 net4 A net5 vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=620n option_vop=7.7
+XX12 net7 A vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=650n option_vop=7.7
+XX13 vss A net7 vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=650n option_vop=7.7
+XX14 net7 A vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=650n option_vop=7.7
+XX15 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX16 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX17 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX18 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX19 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX20 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX21 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX22 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX23 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX24 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX25 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX26 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX27 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX28 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX29 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX30 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX31 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX32 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX33 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX34 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX35 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX36 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX37 vss net7 Z vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX38 Z net7 vss vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=900n option_vop=7.7
+XX8 net5 A net4 vss vdd SUB nch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=620n option_vop=7.7
+XX40 vdd OE net5 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.25u option_vop=7.7
+XX39 net3 OE vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.68u option_vop=7.7
+XX41 net5 OE vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.25u option_vop=7.7
+XX42 vdd OE net5 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.25u option_vop=7.7
+XX43 net5 OE vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.25u option_vop=7.7
+XX48 vdd net3 net6 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.2u option_vop=7.7
+XX49 net6 net3 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.2u option_vop=7.7
+XX50 vdd net3 net6 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.2u option_vop=7.7
+XX51 net6 A net7 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n width=1.2u 
++ option_vop=7.7
+XX52 net7 A net6 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n width=1.2u 
++ option_vop=7.7
+XX53 net6 A net7 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n width=1.2u 
++ option_vop=7.7
+XX44 vdd A net5 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.25u option_vop=7.7
+XX45 net5 A vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.25u option_vop=7.7
+XX46 vdd A net5 vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.25u option_vop=7.7
+XX47 net5 A vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.25u option_vop=7.7
+XX54 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX55 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX56 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX57 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX58 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX59 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX60 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX61 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX62 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX63 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX64 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX65 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX66 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX67 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX68 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX69 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX70 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX71 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX72 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX73 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX74 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX75 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX76 vdd net5 Z vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+XX77 Z net5 vdd vdd vss vdd SUB pch_svt_iso_nbl_5p0v m=1 length=500n 
++ width=1.84u option_vop=7.7
+.ENDS
