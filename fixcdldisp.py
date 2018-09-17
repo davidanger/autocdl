@@ -23,6 +23,8 @@ while (re.search(' vdd ', data) != None):
     data = re.sub(' vdd ', ' VDD ', data)
 while (re.search(' vss ', data) != None):
     data = re.sub(' vss ', ' VSS ', data)
+data = re.sub('vdd:B', 'VDD:B', data)
+data = re.sub('vss:B', 'VSS:B', data)
 
 # Connect FIX, Change VDD VSS PIN to vdd vss
 # data = re.sub(' VDD VSS SUB', ' vdd vss SUB', data)
