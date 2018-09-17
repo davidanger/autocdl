@@ -13,11 +13,20 @@ data = infile.read()
 infile.close()
 
 # Search parameter length and add parameter l
-datal = re.sub(r'length=(\S+)', 'length=\g<1> l=\g<1>', data)
+data = re.sub(r'length=(\S+)', 'length=\g<1> l=\g<1>', data)
 
 # Search parameter width and add parameter w & fw
-datao = re.sub(r'width=(\S+)', 'width=\g<1> w=\g<1> fw=\g<1>', datal)
+data = re.sub(r'width=(\S+)', 'width=\g<1> w=\g<1> fw=\g<1>', data)
+
+# Connect FIX, Change vdd & vss net to VDD and VSS net
+while (re.search(' vdd ', data) != None):
+    data = re.sub(' vdd ', ' VDD ', data)
+while (re.search(' vss ', data) != None):
+    data = re.sub(' vss ', ' VSS ', data)
+
+# Connect FIX, Change VDD VSS PIN to vdd vss
+# data = re.sub(' VDD VSS SUB', ' vdd vss SUB', data)
 
 # Save to output file
-outfile.write(datao)
+outfile.write(data)
 outfile.close()
