@@ -1,0 +1,3600 @@
+(edif CADENCE_EDIF
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+  (status
+  (written     (timeStamp 2018  9 27 17 41 31)
+   (author "Cadence Design Systems")
+   (dataOrigin "z30")
+   (program "edifout" (version "t version 6.1.7-64b 03/02/2016 18:55 (sjfnl119) $"))))
+ (external hb180enh
+  (EDIFLEVEL 0)
+  (technology (numberDefinition))
+  (cell nch5_iso_nbl (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port ISO (direction INOUT))
+     (port SUB (direction INOUT))
+     (port S (direction INOUT))
+     (port G (direction INOUT))
+     (port D (direction INOUT))
+     (port B (direction INOUT))))))
+ (external basic
+  (EDIFLEVEL 0)
+  (technology (numberDefinition))
+  (cell noConn (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port noConn (direction INOUT)))))
+  (cell iopin (cellType GENERIC)
+   (view symbolr (viewType GRAPHIC)
+    (interface)))
+  (cell opin (cellType GENERIC)
+   (view symbol (viewType GRAPHIC)
+    (interface)))
+  (cell ipin (cellType GENERIC)
+   (view symbol (viewType GRAPHIC)
+    (interface))))
+ (external OD0002_sch_ac
+  (EDIFLEVEL 0)
+  (technology (numberDefinition))
+  (cell LSH_5V (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port OUT (direction OUTPUT))
+     (port INP (direction INPUT))
+     (port INN (direction INPUT))
+     (port VDD (direction INOUT))
+     (port GND (direction INOUT))
+     (port SUB (direction INOUT)))))
+  (cell LS_5T1P8 (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port GND (direction INPUT))
+     (port OUT (direction OUTPUT))
+     (port IN (direction INPUT))
+     (port VDD (direction INPUT))
+     (port SUB (direction INOUT))
+     (port ISO (direction INOUT))))))
+ (external hb180enh_digitalcell_S
+  (EDIFLEVEL 0)
+  (technology (numberDefinition))
+  (cell INVX2_5v_ISO_NBL (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port A (direction INPUT))
+     (port Y (direction OUTPUT))
+     (port VDD (direction INOUT))
+     (port ISO (direction INOUT))
+     (port SUB (direction INOUT))
+     (port VSS (direction INOUT)))))
+  (cell NOR2X1_5v_ISO_NBL (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port B (direction INPUT))
+     (port Y (direction OUTPUT))
+     (port A (direction INPUT))
+     (port VDD (direction INOUT))
+     (port VSS (direction INOUT))
+     (port ISO (direction INOUT))
+     (port SUB (direction INOUT)))))
+  (cell INVX1_ISO_NBL (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port ISO (direction INOUT))
+     (port SUB (direction INOUT))
+     (port A (direction INPUT))
+     (port Y (direction OUTPUT))
+     (port VDD (direction INOUT))
+     (port VSS (direction INOUT)))))
+  (cell NAND2X1_5v_ISO_NBL (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port B (direction INPUT))
+     (port Y (direction OUTPUT))
+     (port A (direction INPUT))
+     (port VDD (direction INOUT))
+     (port VSS (direction INOUT))
+     (port ISO (direction INOUT))
+     (port SUB (direction INOUT)))))
+  (cell sizeB (cellType GENERIC)
+   (view symbol (viewType GRAPHIC)
+    (interface)))
+  (cell INVX1_5v_ISO_NBL (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port A (direction INPUT))
+     (port Y (direction OUTPUT))
+     (port VDD (direction INOUT))
+     (port SUB (direction INOUT))
+     (port ISO (direction INOUT))
+     (port VSS (direction INOUT)))))
+  (cell INVX2_ISO_NBL (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port SUB (direction INOUT))
+     (port ISO (direction INOUT))
+     (port A (direction INPUT))
+     (port Y (direction OUTPUT))
+     (port VDD (direction INOUT))
+     (port VSS (direction INOUT)))))
+  (cell INVX4_5v_ISO_NBL (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port A (direction INPUT))
+     (port Y (direction OUTPUT))
+     (port VDD (direction INOUT))
+     (port ISO (direction INOUT))
+     (port SUB (direction INOUT))
+     (port VSS (direction INOUT)))))
+  (cell NAND2X1_ISO_NBL (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port SUB (direction INOUT))
+     (port ISO (direction INOUT))
+     (port B (direction INPUT))
+     (port Y (direction OUTPUT))
+     (port A (direction INPUT))
+     (port VDD (direction INOUT))
+     (port VSS (direction INOUT)))))
+  (cell NOR2X1_ISO_NBL (cellType GENERIC)
+   (view symbol (viewType SCHEMATIC)
+    (interface
+     (port ISO (direction INOUT))
+     (port SUB (direction INOUT))
+     (port B (direction INPUT))
+     (port Y (direction OUTPUT))
+     (port A (direction INPUT))
+     (port VDD (direction INOUT))
+     (port VSS (direction INOUT))))))
+ (library OD0003_sch_ls
+  (edifLevel 0)
+  (technology
+   (numberDefinition
+    (scale 160 (E 25400 -6) (unit DISTANCE)))
+   (figureGroup y5
+     (color 0 25 25)
+    (visible (true))
+    (property layerNumber (integer 212))
+    (property priority (integer 272)))
+   (figureGroup DUMMETBLK
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 41))
+    (property priority (integer 88)))
+   (figureGroup NIMP
+     (color 25 21 0)
+    (visible (true))
+    (property layerNumber (integer 8))
+    (property priority (integer 12)))
+   (figureGroup Row
+     (color 0 25 25)
+    (visible (true))
+    (property layerNumber (integer 201))
+    (property priority (integer 309)))
+   (figureGroup background
+     (color 0 0 0)
+    (visible (true))
+    (property layerNumber (integer 254))
+    (property priority (integer 225)))
+   (figureGroup FUSOR
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 165))
+    (property priority (integer 189)))
+   (figureGroup METRES
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 35))
+    (property priority (integer 73)))
+   (figureGroup ISO_V30
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 136))
+    (property priority (integer 162)))
+   (figureGroup y8
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 215))
+    (property priority (integer 275)))
+   (figureGroup DPW
+     (color 20 9 2)
+    (visible (true))
+    (property layerNumber (integer 160))
+    (property priority (integer 185)))
+   (figureGroup ISO_T
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 27))
+    (property priority (integer 62)))
+   (figureGroup LDMTAG
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 94))
+    (property priority (integer 135)))
+   (figureGroup ISPWELL
+     (color 25 16 0)
+    (visible (true))
+    (property layerNumber (integer 55))
+    (property priority (integer 103)))
+   (figureGroup MCW
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 45))
+    (property priority (integer 92)))
+   (figureGroup device
+     (color 0 25 0)
+    (pathWidth 0)
+    (visible (true))
+    (property layerNumber (integer 231))
+    (property priority (integer 250)))
+   (figureGroup V12
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 116))
+    (property priority (integer 151)))
+   (figureGroup HRID
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 91))
+    (property priority (integer 132)))
+   (figureGroup ANT
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 51))
+    (property priority (integer 99)))
+   (figureGroup spike
+     (color 16 3 24)
+    (visible (true))
+    (property layerNumber (integer 223))
+    (property priority (integer 291)))
+   (figureGroup cust1
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 181))
+    (property priority (integer 200)))
+   (figureGroup DEPL
+     (color 25 16 0)
+    (visible (true))
+    (property layerNumber (integer 93))
+    (property priority (integer 134)))
+   (figureGroup cust3
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 183))
+    (property priority (integer 202)))
+   (figureGroup cust2
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 182))
+    (property priority (integer 201)))
+   (figureGroup SAB
+     (color 5 19 25)
+    (visible (true))
+    (property layerNumber (integer 47))
+    (property priority (integer 94)))
+   (figureGroup DUMBLK
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 40))
+    (property priority (integer 81)))
+   (figureGroup y9
+     (color 17 25 25)
+    (visible (true))
+    (property layerNumber (integer 216))
+    (property priority (integer 276)))
+   (figureGroup prBoundary
+     (color 20 0 12)
+    (visible (true))
+    (property layerNumber (integer 235))
+    (property priority (integer 240)))
+   (figureGroup MET2_CAP
+     (color 2 0 10)
+    (visible (true))
+    (property layerNumber (integer 126))
+    (property priority (integer 157)))
+   (figureGroup cust5
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 185))
+    (property priority (integer 204)))
+   (figureGroup ISO_V40
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 138))
+    (property priority (integer 164)))
+   (figureGroup ISO_V7
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 135))
+    (property priority (integer 161)))
+   (figureGroup grid
+     (color 0 0 25)
+    (visible (true))
+    (property layerNumber (integer 251))
+    (property priority (integer 226)))
+   (figureGroup MTM
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 87))
+    (property priority (integer 126)))
+   (figureGroup DTAG
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 70))
+    (property priority (integer 117)))
+   (figureGroup marker
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 238))
+    (property priority (integer 307)))
+   (figureGroup hilite
+     (color 25 25 25)
+    (visible (true))
+    (property layerNumber (integer 253))
+    (property priority (integer 277)))
+   (figureGroup FUSE
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 88))
+    (property priority (integer 130)))
+   (figureGroup EEPROM
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 149))
+    (property priority (integer 174)))
+   (figureGroup changedLayer
+     (color 25 0 0)
+    (visible (false))
+    (property layerNumber (integer 220))
+    (property priority (integer 305)))
+   (figureGroup select
+     (color 20 18 14)
+    (visible (true))
+    (property layerNumber (integer 239))
+    (property priority (integer 287)))
+   (figureGroup stretch
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 218))
+    (property priority (integer 266)))
+   (figureGroup BOUNDARY
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 56))
+    (property priority (integer 104)))
+   (figureGroup ARTBOUNDRY
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 42))
+    (property priority (integer 89)))
+   (figureGroup METTOP
+     (color 2 0 10)
+    (visible (true))
+    (property layerNumber (integer 26))
+    (property priority (integer 58)))
+   (figureGroup y4
+     (color 20 25 6)
+    (visible (true))
+    (property layerNumber (integer 211))
+    (property priority (integer 271)))
+   (figureGroup ESDTOP
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 124))
+    (property priority (integer 155)))
+   (figureGroup BTAG
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 33))
+    (property priority (integer 71)))
+   (figureGroup NWRES
+     (color 5 20 5)
+    (visible (true))
+    (property layerNumber (integer 32))
+    (property priority (integer 70)))
+   (figureGroup MET1
+     (color 0 0 25)
+    (visible (true))
+    (property layerNumber (integer 10))
+    (property priority (integer 16)))
+   (figureGroup PIMP
+     (color 0 25 25)
+    (visible (true))
+    (property layerNumber (integer 7))
+    (property priority (integer 11)))
+   (figureGroup y1
+     (color 25 0 0)
+    (visible (true))
+    (property layerNumber (integer 208))
+    (property priority (integer 268)))
+   (figureGroup NBODY
+     (color 5 20 5)
+    (visible (true))
+    (property layerNumber (integer 43))
+    (property priority (integer 90)))
+   (figureGroup CSD
+     (color 25 25 25)
+    (visible (true))
+    (property layerNumber (integer 143))
+    (property priority (integer 169)))
+   (figureGroup HVND
+     (color 20 9 2)
+    (visible (true))
+    (property layerNumber (integer 57))
+    (property priority (integer 105)))
+   (figureGroup annotate
+     (color 25 16 0)
+    (visible (true))
+    (property layerNumber (integer 237))
+    (property priority (integer 228)))
+   (figureGroup MNW
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 25))
+    (property priority (integer 57)))
+   (figureGroup NWELL
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 2))
+    (property priority (integer 2)))
+   (figureGroup supply
+     (color 5 20 5)
+    (visible (true))
+    (property layerNumber (integer 227))
+    (property priority (integer 292)))
+   (figureGroup border
+     (color 25 0 2)
+    (visible (true))
+    (property layerNumber (integer 232))
+    (property priority (integer 249)))
+   (figureGroup MET4_CAP
+     (color 5 20 5)
+    (visible (true))
+    (property layerNumber (integer 128))
+    (property priority (integer 159)))
+   (figureGroup Unrouted
+     (color 0 25 0)
+    (visible (true))
+    (property layerNumber (integer 200))
+    (property priority (integer 316)))
+   (figureGroup y3
+     (color 5 20 5)
+    (visible (true))
+    (property layerNumber (integer 210))
+    (property priority (integer 270)))
+   (figureGroup MET1_CAP
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 125))
+    (property priority (integer 156)))
+   (figureGroup ESDBOT
+     (color 25 25 25)
+    (visible (true))
+    (property layerNumber (integer 167))
+    (property priority (integer 191)))
+   (figureGroup CUP_DIA
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 145))
+    (property priority (integer 171)))
+   (figureGroup CDM
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 137))
+    (property priority (integer 163)))
+   (figureGroup POLY_CAP
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 39))
+    (property priority (integer 80)))
+   (figureGroup DNW
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 22))
+    (property priority (integer 54)))
+   (figureGroup Canplace
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 204))
+    (property priority (integer 315)))
+   (figureGroup y6
+     (color 25 21 0)
+    (visible (true))
+    (property layerNumber (integer 213))
+    (property priority (integer 273)))
+   (figureGroup unset
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 221))
+    (property priority (integer 294)))
+   (figureGroup HVTTAG
+     (color 21 23 25)
+    (visible (true))
+    (property layerNumber (integer 29))
+    (property priority (integer 63)))
+   (figureGroup SDPW
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 23))
+    (property priority (integer 55)))
+   (figureGroup VIA2
+     (color 25 25 25)
+    (visible (true))
+    (property layerNumber (integer 13))
+    (property priority (integer 33)))
+   (figureGroup PWELL
+     (color 25 16 0)
+    (visible (true))
+    (property layerNumber (integer 1))
+    (property priority (integer 0)))
+   (figureGroup DNWELL
+     (color 0 25 0)
+    (visible (true))
+    (property layerNumber (integer 98))
+    (property priority (integer 140)))
+   (figureGroup VIA1
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 11))
+    (property priority (integer 23)))
+   (figureGroup SRAM
+     (color 23 13 23)
+    (visible (true))
+    (property layerNumber (integer 64))
+    (property priority (integer 109)))
+   (figureGroup NBL
+     (color 16 3 24)
+    (visible (true))
+    (property layerNumber (integer 96))
+    (property priority (integer 138)))
+   (figureGroup unknown
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 222))
+    (property priority (integer 293)))
+   (figureGroup y2
+     (color 16 3 24)
+    (visible (true))
+    (property layerNumber (integer 209))
+    (property priority (integer 269)))
+   (figureGroup hardFence
+     (color 25 0 0)
+    (visible (true))
+    (property layerNumber (integer 205))
+    (property priority (integer 244)))
+   (figureGroup align
+     (color 20 18 14)
+    (visible (true))
+    (property layerNumber (integer 234))
+    (property priority (integer 243)))
+   (figureGroup MET4
+     (color 23 3 1)
+    (visible (true))
+    (property layerNumber (integer 16))
+    (property priority (integer 46)))
+   (figureGroup edgeLayer
+     (color 19 19 19)
+    (visible (true))
+    (property layerNumber (integer 219))
+    (property priority (integer 262)))
+   (figureGroup LDDBLK
+     (color 20 9 2)
+    (visible (true))
+    (property layerNumber (integer 155))
+    (property priority (integer 181)))
+   (figureGroup BLKWELL
+     (color 24 25 25)
+    (visible (true))
+    (property layerNumber (integer 92))
+    (property priority (integer 133)))
+   (figureGroup wire
+     (color 25 21 0)
+    (pathWidth 0)
+    (textHeight 10)
+    (visible (true))
+    (property layerNumber (integer 228))
+    (property priority (integer 255)))
+   (figureGroup V5
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 114))
+    (property priority (integer 149)))
+   (figureGroup DASDMY
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 63))
+    (property priority (integer 108)))
+   (figureGroup SDI
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 34))
+    (property priority (integer 72)))
+   (figureGroup MET2
+     (color 0 25 0)
+    (visible (true))
+    (property layerNumber (integer 12))
+    (property priority (integer 26)))
+   (figureGroup V7
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 115))
+    (property priority (integer 150)))
+   (figureGroup VIA3
+     (color 0 25 25)
+    (visible (true))
+    (property layerNumber (integer 15))
+    (property priority (integer 43)))
+   (figureGroup hiz
+     (color 25 16 0)
+    (visible (true))
+    (property layerNumber (integer 224))
+    (property priority (integer 289)))
+   (figureGroup pin
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 229))
+    (property priority (integer 258)))
+   (figureGroup PDT
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 101))
+    (property priority (integer 143)))
+   (figureGroup PSDBLK
+     (color 0 25 25)
+    (visible (true))
+    (property layerNumber (integer 162))
+    (property priority (integer 187)))
+   (figureGroup LVNW
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 140))
+    (property priority (integer 166)))
+   (figureGroup STD_B
+     (color 0 0 25)
+    (visible (true))
+    (property layerNumber (integer 95))
+    (property priority (integer 137)))
+   (figureGroup BOND
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 50))
+    (property priority (integer 98)))
+   (figureGroup MET3_CAP
+     (color 24 25 25)
+    (visible (true))
+    (property layerNumber (integer 127))
+    (property priority (integer 158)))
+   (figureGroup V2
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 112))
+    (property priority (integer 148)))
+   (figureGroup ESDMY2
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 69))
+    (property priority (integer 116)))
+   (figureGroup SDNW
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 24))
+    (property priority (integer 56)))
+   (figureGroup Group
+     (color 0 25 0)
+    (visible (true))
+    (property layerNumber (integer 202))
+    (property priority (integer 311)))
+   (figureGroup softFence
+     (color 5 5 23)
+    (visible (true))
+    (property layerNumber (integer 206))
+    (property priority (integer 245)))
+   (figureGroup DBL
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 191))
+    (property priority (integer 206)))
+   (figureGroup PCHSTBLK
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 105))
+    (property priority (integer 145)))
+   (figureGroup TFVIA
+     (color 0 25 25)
+    (visible (true))
+    (property layerNumber (integer 73))
+    (property priority (integer 121)))
+   (figureGroup DRNTAG
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 71))
+    (property priority (integer 118)))
+   (figureGroup ESDMY
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 68))
+    (property priority (integer 113)))
+   (figureGroup POR
+     (color 16 3 24)
+    (visible (true))
+    (property layerNumber (integer 21))
+    (property priority (integer 53)))
+   (figureGroup MPW
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 142))
+    (property priority (integer 168)))
+   (figureGroup V40
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 119))
+    (property priority (integer 154)))
+   (figureGroup HOTNW
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 37))
+    (property priority (integer 78)))
+   (figureGroup ESDMY1
+     (color 23 3 1)
+    (visible (true))
+    (property layerNumber (integer 76))
+    (property priority (integer 123)))
+   (figureGroup DIFF
+     (color 23 13 23)
+    (visible (true))
+    (property layerNumber (integer 3))
+    (property priority (integer 4)))
+   (figureGroup IBGTAG
+     (color 24 25 25)
+    (visible (true))
+    (property layerNumber (integer 54))
+    (property priority (integer 102)))
+   (figureGroup designFlow
+     (color 0 25 0)
+    (visible (true))
+    (property layerNumber (integer 217))
+    (property priority (integer 295)))
+   (figureGroup drive
+     (color 0 0 25)
+    (visible (true))
+    (property layerNumber (integer 226))
+    (property priority (integer 288)))
+   (figureGroup axis
+     (color 25 25 25)
+    (visible (true))
+    (property layerNumber (integer 252))
+    (property priority (integer 261)))
+   (figureGroup LVGD
+     (color 25 0 0)
+    (visible (true))
+    (property layerNumber (integer 163))
+    (property priority (integer 188)))
+   (figureGroup instance
+     (color 25 0 0)
+    (visible (true))
+    (property layerNumber (integer 236))
+    (property priority (integer 238)))
+   (figureGroup SIOTP
+     (color 0 25 0)
+    (visible (true))
+    (property layerNumber (integer 60))
+    (property priority (integer 107)))
+   (figureGroup NDT
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 100))
+    (property priority (integer 142)))
+   (figureGroup TFR
+     (color 0 25 0)
+    (visible (true))
+    (property layerNumber (integer 72))
+    (property priority (integer 119)))
+   (figureGroup ESDPDIO
+     (color 20 9 2)
+    (visible (true))
+    (property layerNumber (integer 58))
+    (property priority (integer 106)))
+   (figureGroup CELLNAME
+     (color 23 3 1)
+    (visible (true))
+    (property layerNumber (integer 53))
+    (property priority (integer 101)))
+   (figureGroup NDT2
+     (color 0 25 25)
+    (visible (true))
+    (property layerNumber (integer 147))
+    (property priority (integer 173)))
+   (figureGroup MOM_CAP
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 168))
+    (property priority (integer 192)))
+   (figureGroup EPROM
+     (color 25 0 25)
+    (visible (true))
+    (property layerNumber (integer 150))
+    (property priority (integer 178)))
+   (figureGroup TRENCH
+     (color 24 25 25)
+    (visible (true))
+    (property layerNumber (integer 146))
+    (property priority (integer 172)))
+   (figureGroup HVGS
+     (color 0 25 0)
+    (visible (true))
+    (property layerNumber (integer 139))
+    (property priority (integer 165)))
+   (figureGroup SDBLK
+     (color 21 23 25)
+    (visible (true))
+    (property layerNumber (integer 107))
+    (property priority (integer 146)))
+   (figureGroup MVT50
+     (color 23 3 1)
+    (visible (true))
+    (property layerNumber (integer 78))
+    (property priority (integer 124)))
+   (figureGroup TXT
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 44))
+    (property priority (integer 91)))
+   (figureGroup RESIST
+     (color 16 3 24)
+    (visible (true))
+    (property layerNumber (integer 31))
+    (property priority (integer 64)))
+   (figureGroup y0
+     (color 0 0 25)
+    (visible (true))
+    (property layerNumber (integer 207))
+    (property priority (integer 267)))
+   (figureGroup cust4
+     (color 25 18 19)
+    (visible (true))
+    (property layerNumber (integer 184))
+    (property priority (integer 203)))
+   (figureGroup ANLGDMY
+     (color 25 21 0)
+    (visible (true))
+    (property layerNumber (integer 154))
+    (property priority (integer 180)))
+   (figureGroup ESDT45
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 131))
+    (property priority (integer 160)))
+   (figureGroup HRI
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 90))
+    (property priority (integer 131)))
+   (figureGroup V20
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 117))
+    (property priority (integer 152)))
+   (figureGroup DPWELL
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 99))
+    (property priority (integer 141)))
+   (figureGroup text
+     (color 25 25 25)
+    (visible (true))
+    (property layerNumber (integer 230))
+    (property priority (integer 246)))
+   (figureGroup FG
+     (color 25 0 2)
+    (visible (true))
+    (property layerNumber (integer 141))
+    (property priority (integer 167)))
+   (figureGroup TGOX50
+     (color 23 3 1)
+    (visible (true))
+    (property layerNumber (integer 111))
+    (property priority (integer 147)))
+   (figureGroup snap
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 233))
+    (property priority (integer 264)))
+   (figureGroup NSDBLK
+     (color 25 21 0)
+    (visible (true))
+    (property layerNumber (integer 161))
+    (property priority (integer 186)))
+   (figureGroup ESD
+     (color 0 0 25)
+    (visible (true))
+    (property layerNumber (integer 52))
+    (property priority (integer 100)))
+   (figureGroup CONT
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 9))
+    (property priority (integer 13)))
+   (figureGroup POLY
+     (color 25 0 0)
+    (visible (true))
+    (property layerNumber (integer 6))
+    (property priority (integer 7)))
+   (figureGroup ESDSTK
+     (color 16 3 24)
+    (visible (true))
+    (property layerNumber (integer 166))
+    (property priority (integer 190)))
+   (figureGroup NOGRID
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 46))
+    (property priority (integer 93)))
+   (figureGroup y7
+     (color 23 13 23)
+    (visible (true))
+    (property layerNumber (integer 214))
+    (property priority (integer 274)))
+   (figureGroup DWELL
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 102))
+    (property priority (integer 144)))
+   (figureGroup DEEPN
+     (color 20 18 14)
+    (visible (true))
+    (property layerNumber (integer 97))
+    (property priority (integer 139)))
+   (figureGroup DRCDMY
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 48))
+    (property priority (integer 95)))
+   (figureGroup PIQ
+     (color 25 21 0)
+    (visible (true))
+    (property layerNumber (integer 158))
+    (property priority (integer 182)))
+   (figureGroup DWELL4X
+     (color 5 20 5)
+    (visible (true))
+    (property layerNumber (integer 153))
+    (property priority (integer 179)))
+   (figureGroup SEALRING
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 38))
+    (property priority (integer 79)))
+   (figureGroup POWPRO
+     (color 0 0 25)
+    (visible (true))
+    (property layerNumber (integer 36))
+    (property priority (integer 77)))
+   (figureGroup Cannotoccupy
+     (color 25 0 0)
+    (visible (true))
+    (property layerNumber (integer 203))
+    (property priority (integer 313)))
+   (figureGroup PBL
+     (color 20 9 2)
+    (visible (true))
+    (property layerNumber (integer 159))
+    (property priority (integer 184)))
+   (figureGroup FC
+     (color 16 3 24)
+    (visible (true))
+    (property layerNumber (integer 144))
+    (property priority (integer 170)))
+   (figureGroup V30
+     (color 25 25 0)
+    (visible (true))
+    (property layerNumber (integer 118))
+    (property priority (integer 153)))
+   (figureGroup GR
+     (color 25 0 0)
+    (visible (true))
+    (property layerNumber (integer 49))
+    (property priority (integer 97)))
+   (figureGroup resist
+     (color 0 25 25)
+    (visible (true))
+    (property layerNumber (integer 225))
+    (property priority (integer 290)))
+   (figureGroup OVERLAP
+     (color 18 20 20)
+    (visible (true))
+    (property layerNumber (integer 190))
+    (property priority (integer 205)))
+   (figureGroup POLY2
+     (color 3 14 3)
+    (visible (true))
+    (property layerNumber (integer 86))
+    (property priority (integer 125)))
+   (figureGroup MET3
+     (color 16 4 4)
+    (visible (true))
+    (property layerNumber (integer 14))
+    (property priority (integer 36))))
+  (cell ANALOG_CTRL (cellType GENERIC)
+   (view (rename schematic_46_OD02 "schematic.OD02") (viewType SCHEMATIC)
+    (interface
+     (port SHUTDOWN_INT_VIN (direction OUTPUT))
+     (port SD_SWIRE_VIN (direction OUTPUT))
+     (port SD_ENO3_VIN (direction OUTPUT))
+     (port SUB (direction INOUT))
+     (port SD_SWIRE_VDD (direction OUTPUT))
+     (port SD_ENO3_VDD (direction OUTPUT))
+     (port PWD_BIAS_IV (direction OUTPUT))
+     (port PWD_BIAS_ST2 (direction OUTPUT))
+     (port PWD_BIAS_ST (direction OUTPUT))
+     (port PWD_OSC_VDD (direction OUTPUT))
+     (port UVLO_VDD (direction INPUT))
+     (port ENO3_VIN (direction INPUT))
+     (port SWIRE_VIN (direction INPUT))
+     (port SHUTDOWN (direction OUTPUT))
+     (port OFF_ENO3_VDD (direction INPUT))
+     (port PWD (direction INPUT))
+     (port GND (direction INPUT))
+     (port VIN (direction INPUT))
+     (port OFF_SWIRE_VDD (direction INPUT))
+     (port VDD (direction INPUT))
+	(property (rename net_35_ "net#") (integer 103))
+	(property schGeometryLastUpdated (integer 136934))
+	(property schGeometryVersion (string "sch.ds.gm.1.4"))
+	(property lastSchematicExtraction (string "Thu Apr 26 11:16:25 2018%10%") (owner "Cadence"))
+	(property connectivityLastUpdated (integer 136934))
+	(property schXtrVersion (string "sch.10.0") (owner "Cadence"))
+	(property (rename instance_35_ "instance#") (integer 51) (owner "Cadence"))
+	(property (rename pin_35_ "pin#") (integer 21) (owner "Cadence")))
+    (contents
+     (page SH1
+      (instance I36
+       (viewRef symbol (cellRef INVX2_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 390 -170))))
+      (instance I24
+       (viewRef symbol (cellRef INVX2_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1790 -1120))))
+      (instance I7
+       (viewRef symbol (cellRef INVX1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 140 -320))))
+      (instance I10
+       (viewRef symbol (cellRef NAND2X1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 810 -420))))
+      (instance I6
+       (viewRef symbol (cellRef LSH_5V (libraryRef OD0002_sch_ac)))
+       (transform (origin (pt 310 -420))))
+      (instance I45
+       (viewRef symbol (cellRef INVX1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1710 -660))))
+      (instance I3
+       (viewRef symbol (cellRef INVX1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt -60 -450))))
+      (instance I47
+       (viewRef symbol (cellRef NOR2X1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1120 -250))))
+      (instance (array (rename I50_60_2TO0_62_ "I50<2:0>") 3)
+       (viewRef symbol (cellRef noConn (libraryRef basic)))
+       (transform (orientation R90) (origin (pt 2040 240))))
+      (instance I8
+       (viewRef symbol (cellRef INVX4_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1300 -110))))
+      (instance I44
+       (viewRef symbol (cellRef INVX1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1710 -550))))
+      (instance (array (rename I26_60_3TO0_62_ "I26<3:0>") 4)
+       (viewRef symbol (cellRef NAND2X1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt -20 -910))))
+      (instance (array (rename I28_60_3TO0_62_ "I28<3:0>") 4)
+       (viewRef symbol (cellRef NOR2X1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt -20 -1070))))
+      (instance (array (rename I42_60_2TO0_62_ "I42<2:0>") 3)
+       (viewRef symbol (cellRef noConn (libraryRef basic)))
+       (transform (orientation R90) (origin (pt 1990 -290))))
+      (instance I19
+       (viewRef symbol (cellRef INVX2_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1250 -660))))
+      (instance NM0
+       (viewRef symbol (cellRef nch5_iso_nbl (libraryRef hb180enh)))
+       (transform (origin (pt 600 -500)))
+	(property w (string "1u"))
+	(property extrail (string "15"))
+	(property intrail (string "15"))
+	(property number (string "1"))
+	(property l (string "2.25u"))
+	(property width (string "2u"))
+	(property fw (string "2u"))
+	(property ad (string "880f"))
+	(property as (string "880f"))
+	(property pd (string "2.88u"))
+	(property ps (string "2.88u"))
+	(property model (string "nch5_iso_nbl"))
+	(property m (string "1"))
+	(property length (string "500n"))
+	(property nf (string "1"))
+	(property threshold (string "1u"))
+	(property applyThresh (boolean (FALSE)))
+	(property gateConn (string "None"))
+	(property connectSD (string "None"))
+	(property sdMtlWidth (string "380n"))
+	(property switchSD (boolean (FALSE)))
+	(property leftAbut (integer 0))
+	(property rightAbut (integer 0))
+	(property leftDumFngrs (integer 0))
+	(property rightDumFngrs (integer 0))
+	(property saExt (string "0u"))
+	(property sbExt (string "0u"))
+	(property tap (string "Detached"))
+	(property leftTap (boolean (TRUE)))
+	(property rightTap (boolean (TRUE)))
+	(property bottomTap (boolean (TRUE)))
+	(property topTap (boolean (TRUE)))
+	(property bTapCont (boolean (TRUE)))
+	(property tapExtension (string "left 0.0 right 0.0 bottom 0.0 top 0.0"))
+	(property tapCntRows (integer 1))
+	(property isoRing (boolean (TRUE)))
+	(property leftIso (boolean (TRUE)))
+	(property rightIso (boolean (TRUE)))
+	(property subTap (boolean (TRUE)))
+	(property leftSub (boolean (TRUE)))
+	(property rightSub (boolean (TRUE)))
+	(property showSimParams (boolean (FALSE)))
+	(property sa (string "440n"))
+	(property sb (string "440n"))
+	(property pasUpdateParamList (string "width length"))
+	(property lxParamsToIgnoreForCheck (string "gateConn connectSD mtlCvg leftAbut rightAbut showSimParams switchSD ad as pd ps abutConn")))
+      (instance (array (rename I34_60_2TO0_62_ "I34<2:0>") 3)
+       (viewRef symbol (cellRef NOR2X1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1800 -100))))
+      (instance I21
+       (viewRef symbol (cellRef INVX1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 140 40))))
+      (instance I12
+       (viewRef symbol (cellRef INVX1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 610 -700))))
+      (instance I5
+       (viewRef symbol (cellRef LS_5T1P8 (libraryRef OD0002_sch_ac)))
+       (transform (origin (pt 1140 -380))))
+      (instance I9
+       (viewRef symbol (cellRef NAND2X1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 810 -20))))
+      (commentGraphics
+      (instance I13
+       (viewRef symbol (cellRef sizeB (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt -470 -1340)))
+	(property level (string "Cell"))
+	(property visPower (string ""))
+	(property author (string "Raymond Chen"))
+	(property rev (string "1.0"))
+	(property sheetNumber (string "1"))
+	(property maxSheets (string "1"))
+	(property confidentiality (boolean (TRUE)))
+	(property vp (string "VPLUS"))
+	(property vm (string "VMINUS"))
+	(property mosModel (string "MM9"))))
+      (instance (array (rename I29_60_3TO0_62_ "I29<3:0>") 4)
+       (viewRef symbol (cellRef INVX1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 20 -740))))
+      (instance I27
+       (viewRef symbol (cellRef INVX1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 660 -30))))
+      (instance I48
+       (viewRef symbol (cellRef INVX1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1300 10))))
+      (instance I43
+       (viewRef symbol (cellRef INVX4_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1860 -550))))
+      (instance I25
+       (viewRef symbol (cellRef NAND2X1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1520 -1130))))
+      (instance I0
+       (viewRef symbol (cellRef INVX1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt -60 -90))))
+      (instance (array (rename I37_60_3TO0_62_ "I37<3:0>") 4)
+       (viewRef symbol (cellRef noConn (libraryRef basic)))
+       (transform (orientation R90) (origin (pt 220 -870))))
+      (instance (array (rename I39_60_2TO0_62_ "I39<2:0>") 3)
+       (viewRef symbol (cellRef noConn (libraryRef basic)))
+       (transform (orientation R90) (origin (pt 2040 90))))
+      (instance (array (rename I40_60_2TO0_62_ "I40<2:0>") 3)
+       (viewRef symbol (cellRef noConn (libraryRef basic)))
+       (transform (orientation R90) (origin (pt 2040 -60))))
+      (instance I16
+       (viewRef symbol (cellRef LS_5T1P8 (libraryRef OD0002_sch_ac)))
+       (transform (origin (pt 1160 160))))
+      (instance (array (rename I31_60_2TO0_62_ "I31<2:0>") 3)
+       (viewRef symbol (cellRef INVX1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 380 -920))))
+      (instance I15
+       (viewRef symbol (cellRef INVX1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1250 -810))))
+      (instance I20
+       (viewRef symbol (cellRef LSH_5V (libraryRef OD0002_sch_ac)))
+       (transform (origin (pt 310 -60))))
+      (instance I18
+       (viewRef symbol (cellRef INVX2_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1790 -850))))
+      (instance (array (rename I33_60_2TO0_62_ "I33<2:0>") 3)
+       (viewRef symbol (cellRef NAND2X1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1800 50))))
+      (instance I17
+       (viewRef symbol (cellRef NAND2X1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1520 -860))))
+      (instance (array (rename I35_60_2TO0_62_ "I35<2:0>") 3)
+       (viewRef symbol (cellRef LS_5T1P8 (libraryRef OD0002_sch_ac)))
+       (transform (origin (pt 1750 -290))))
+      (instance I49
+       (viewRef symbol (cellRef NAND2X1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1800 200))))
+      (instance NM2
+       (viewRef symbol (cellRef nch5_iso_nbl (libraryRef hb180enh)))
+       (transform (origin (pt 600 -140)))
+	(property w (string "1u"))
+	(property ps (string "2.88u"))
+	(property pd (string "2.88u"))
+	(property as (string "880f"))
+	(property ad (string "880f"))
+	(property fw (string "2u"))
+	(property width (string "2u"))
+	(property l (string "2.25u"))
+	(property number (string "1"))
+	(property intrail (string "15"))
+	(property extrail (string "15"))
+	(property model (string "nch5_iso_nbl"))
+	(property m (string "1"))
+	(property length (string "500n"))
+	(property nf (string "1"))
+	(property threshold (string "1u"))
+	(property applyThresh (boolean (FALSE)))
+	(property gateConn (string "None"))
+	(property connectSD (string "None"))
+	(property sdMtlWidth (string "380n"))
+	(property switchSD (boolean (FALSE)))
+	(property leftAbut (integer 0))
+	(property rightAbut (integer 0))
+	(property leftDumFngrs (integer 0))
+	(property rightDumFngrs (integer 0))
+	(property saExt (string "0u"))
+	(property sbExt (string "0u"))
+	(property tap (string "Detached"))
+	(property leftTap (boolean (TRUE)))
+	(property rightTap (boolean (TRUE)))
+	(property bottomTap (boolean (TRUE)))
+	(property topTap (boolean (TRUE)))
+	(property bTapCont (boolean (TRUE)))
+	(property tapExtension (string "left 0.0 right 0.0 bottom 0.0 top 0.0"))
+	(property tapCntRows (integer 1))
+	(property isoRing (boolean (TRUE)))
+	(property leftIso (boolean (TRUE)))
+	(property rightIso (boolean (TRUE)))
+	(property subTap (boolean (TRUE)))
+	(property leftSub (boolean (TRUE)))
+	(property rightSub (boolean (TRUE)))
+	(property showSimParams (boolean (FALSE)))
+	(property sa (string "440n"))
+	(property sb (string "440n"))
+	(property pasUpdateParamList (string "width length"))
+	(property lxParamsToIgnoreForCheck (string "gateConn connectSD mtlCvg leftAbut rightAbut showSimParams switchSD ad as pd ps abutConn")))
+      (instance (array (rename NM1_60_2TO0_62_ "NM1<2:0>") 3)
+       (viewRef symbol (cellRef nch5_iso_nbl (libraryRef hb180enh)))
+       (transform (origin (pt 750 -1100)))
+	(property w (string "1u"))
+	(property extrail (string "15"))
+	(property intrail (string "15"))
+	(property number (string "1"))
+	(property l (string "2.25u"))
+	(property width (string "2u"))
+	(property fw (string "2u"))
+	(property ad (string "880f"))
+	(property as (string "880f"))
+	(property pd (string "2.88u"))
+	(property ps (string "2.88u"))
+	(property model (string "nch5_iso_nbl"))
+	(property m (string "1"))
+	(property length (string "500n"))
+	(property nf (string "1"))
+	(property threshold (string "1u"))
+	(property applyThresh (boolean (FALSE)))
+	(property gateConn (string "None"))
+	(property connectSD (string "None"))
+	(property sdMtlWidth (string "380n"))
+	(property switchSD (boolean (FALSE)))
+	(property leftAbut (integer 0))
+	(property rightAbut (integer 0))
+	(property leftDumFngrs (integer 0))
+	(property rightDumFngrs (integer 0))
+	(property saExt (string "0u"))
+	(property sbExt (string "0u"))
+	(property tap (string "Detached"))
+	(property leftTap (boolean (TRUE)))
+	(property rightTap (boolean (TRUE)))
+	(property bottomTap (boolean (TRUE)))
+	(property topTap (boolean (TRUE)))
+	(property bTapCont (boolean (TRUE)))
+	(property tapExtension (string "left 0.0 right 0.0 bottom 0.0 top 0.0"))
+	(property tapCntRows (integer 1))
+	(property isoRing (boolean (TRUE)))
+	(property leftIso (boolean (TRUE)))
+	(property rightIso (boolean (TRUE)))
+	(property subTap (boolean (TRUE)))
+	(property leftSub (boolean (TRUE)))
+	(property rightSub (boolean (TRUE)))
+	(property showSimParams (boolean (FALSE)))
+	(property sa (string "440n"))
+	(property sb (string "440n"))
+	(property pasUpdateParamList (string "width length"))
+	(property lxParamsToIgnoreForCheck (string "gateConn connectSD mtlCvg leftAbut rightAbut showSimParams switchSD ad as pd ps abutConn")))
+      (instance I2
+       (viewRef symbol (cellRef NOR2X1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1060 -120))))
+      (instance I4
+       (viewRef symbol (cellRef INVX1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 660 -390))))
+      (instance (array (rename I30_60_2TO0_62_ "I30<2:0>") 3)
+       (viewRef symbol (cellRef LSH_5V (libraryRef OD0002_sch_ac)))
+       (transform (origin (pt 550 -1020))))
+      (instance I14
+       (viewRef symbol (cellRef INVX1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1100 -810))))
+      (instance (array (rename I32_60_2TO0_62_ "I32<2:0>") 3)
+       (viewRef symbol (cellRef INVX1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1650 40))))
+      (instance (array (rename I38_60_3TO0_62_ "I38<3:0>") 4)
+       (viewRef symbol (cellRef noConn (libraryRef basic)))
+       (transform (orientation R90) (origin (pt 220 -1030))))
+      (instance I22
+       (viewRef symbol (cellRef INVX2_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1790 -980))))
+      (instance I23
+       (viewRef symbol (cellRef NAND2X1_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1520 -990))))
+      (instance (array (rename I41_60_3TO0_62_ "I41<3:0>") 4)
+       (viewRef symbol (cellRef noConn (libraryRef basic)))
+       (transform (orientation R90) (origin (pt 180 -710))))
+      (instance I46
+       (viewRef symbol (cellRef INVX4_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 1860 -660))))
+      (instance I11
+       (viewRef symbol (cellRef INVX1_5v_ISO_NBL (libraryRef hb180enh_digitalcell_S)))
+       (transform (origin (pt 640 120))))
+       (commentGraphics (annotate (stringDisplay "1: System on%10%0: System off"
+	(display (figureGroupOverride text (textHeight 10))
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1550 -50))))))
+       (commentGraphics (annotate (stringDisplay "To UVLO, VDD/VCC regulators"
+	(display (figureGroupOverride text (textHeight 10))
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1600 -110))))))
+       (commentGraphics (annotate (stringDisplay "Updated on 2017-04-27"
+	(display (figureGroupOverride text (textHeight 10))
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1440 -230))))))
+      (portImplementation
+	 (name VDD
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt -90 220))))
+	(connectLocation
+	 (figure pin (dot (pt -20 -10))))
+      (instance PIN1
+       (viewRef symbol (cellRef ipin (libraryRef basic)))
+       (transform (origin (pt -60 220)))))
+      (portImplementation
+	 (name OFF_SWIRE_VDD
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt -110 -60))))
+	(connectLocation
+	 (figure pin (dot (pt -90 -60))))
+      (instance PIN0
+       (viewRef symbol (cellRef ipin (libraryRef basic)))
+       (transform (origin (pt -80 -60)))))
+      (portImplementation
+	 (name VIN
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt -90 200))))
+	(connectLocation
+	 (figure pin (dot (pt 380 100))))
+      (instance PIN2
+       (viewRef symbol (cellRef ipin (libraryRef basic)))
+       (transform (origin (pt -60 200)))))
+      (portImplementation
+	 (name GND
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt -90 180))))
+	(connectLocation
+	 (figure pin (dot (pt 0 -10))))
+      (instance PIN3
+       (viewRef symbol (cellRef ipin (libraryRef basic)))
+       (transform (origin (pt -60 180)))))
+      (portImplementation
+	 (name PWD
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt 240 -140))))
+	(connectLocation
+	 (figure pin (dot (pt 270 -140))))
+      (instance PIN17
+       (viewRef symbol (cellRef ipin (libraryRef basic)))
+       (transform (origin (pt 270 -140)))))
+      (portImplementation
+	 (name OFF_ENO3_VDD
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt -110 -420))))
+	(connectLocation
+	 (figure pin (dot (pt -90 -420))))
+      (instance PIN4
+       (viewRef symbol (cellRef ipin (libraryRef basic)))
+       (transform (origin (pt -80 -420)))))
+      (portImplementation
+	 (name SHUTDOWN
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 1555 -80))))
+	(connectLocation
+	 (figure pin (dot (pt 1540 -80))))
+      (instance PIN5
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 1530 -80)))))
+      (portImplementation
+	 (name SWIRE_VIN
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt 510 150))))
+	(connectLocation
+	 (figure pin (dot (pt 530 150))))
+      (instance PIN6
+       (viewRef symbol (cellRef ipin (libraryRef basic)))
+       (transform (origin (pt 540 150)))))
+      (portImplementation
+	 (name ENO3_VIN
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt 510 -670))))
+	(connectLocation
+	 (figure pin (dot (pt 530 -670))))
+      (instance PIN7
+       (viewRef symbol (cellRef ipin (libraryRef basic)))
+       (transform (origin (pt 540 -670)))))
+      (portImplementation
+	 (name UVLO_VDD
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt 1030 -780))))
+	(connectLocation
+	 (figure pin (dot (pt 1050 -780))))
+      (instance PIN8
+       (viewRef symbol (cellRef ipin (libraryRef basic)))
+       (transform (origin (pt 1060 -780)))))
+      (portImplementation
+	 (name PWD_OSC_VDD
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 1435 -630))))
+	(connectLocation
+	 (figure pin (dot (pt 1420 -630))))
+      (instance PIN9
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 1410 -630)))))
+      (portImplementation
+	 (name PWD_BIAS_ST
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 1995 -820))))
+	(connectLocation
+	 (figure pin (dot (pt 1970 -820))))
+      (instance PIN10
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 1970 -820)))))
+      (portImplementation
+	 (name PWD_BIAS_ST2
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 1995 -1090))))
+	(connectLocation
+	 (figure pin (dot (pt 1970 -1090))))
+      (instance PIN15
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 1970 -1090)))))
+      (portImplementation
+	 (name PWD_BIAS_IV
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 1995 -950))))
+	(connectLocation
+	 (figure pin (dot (pt 1970 -950))))
+      (instance PIN12
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 1970 -950)))))
+      (portImplementation
+	 (name SD_ENO3_VDD
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 1435 -380))))
+	(connectLocation
+	 (figure pin (dot (pt 1420 -380))))
+      (instance PIN13
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 1410 -380)))))
+      (portImplementation
+	 (name SD_SWIRE_VDD
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 1425 160))))
+	(connectLocation
+	 (figure pin (dot (pt 1420 160))))
+      (instance PIN14
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 1400 160)))))
+      (portImplementation
+	 (name SUB
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERRIGHT)
+	(orientation R0)
+	(origin (pt -95 160))))
+	(connectLocation
+	 (figure pin (dot (pt 0 -70))))
+      (instance PIN11
+       (viewRef symbolr (cellRef iopin (libraryRef basic)))
+       (transform (origin (pt -70 160)))))
+      (portImplementation
+	 (name SD_ENO3_VIN
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 2045 -630))))
+	(connectLocation
+	 (figure pin (dot (pt 2030 -630))))
+      (instance PIN18
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 2020 -630)))))
+      (portImplementation
+	 (name SD_SWIRE_VIN
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 2045 -520))))
+	(connectLocation
+	 (figure pin (dot (pt 2030 -520))))
+      (instance PIN16
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 2020 -520)))))
+      (portImplementation
+	 (name SHUTDOWN_INT_VIN
+	(display (figureGroupOverride pin (textHeight 10))
+	(justify CENTERLEFT)
+	(orientation R0)
+	(origin (pt 1485 40))))
+	(connectLocation
+	 (figure pin (dot (pt 1460 40))))
+      (instance PIN19
+       (viewRef symbol (cellRef opin (libraryRef basic)))
+       (transform (origin (pt 1460 40)))))
+    (net (array (rename &_60__42_3_62_SDN "<*3>SDN") 3)
+	(joined
+	 (portList
+		(portRef G (instanceRef (member NM1_60_2TO0_62_ 0)))
+		(portRef G (instanceRef (member NM1_60_2TO0_62_ 1)))
+		(portRef G (instanceRef (member NM1_60_2TO0_62_ 2))))))
+      (net net0140 (joined
+	 (portRef  A (instanceRef I43))
+	 (portRef  Y (instanceRef I44)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1830 -520) (pt 1860 -520)))))
+    (net (array (rename net098_60_0TO2_62_ "net098<0:2>") 3)
+	(joined
+	 (portList
+		(portRef INP (instanceRef (member I30_60_2TO0_62_ 0)))
+		(portRef INP (instanceRef (member I30_60_2TO0_62_ 1)))
+		(portRef INP (instanceRef (member I30_60_2TO0_62_ 2))))
+	 (portList
+		(portRef Y (instanceRef (member I31_60_2TO0_62_ 0)))
+		(portRef Y (instanceRef (member I31_60_2TO0_62_ 1)))
+		(portRef Y (instanceRef (member I31_60_2TO0_62_ 2)))))
+       (figure wire (path (pointList
+	 (pt 530 -950) (pt 550 -950))))
+       (figure wire (path (pointList
+	 (pt 530 -950) (pt 530 -890))))
+       (figure wire (path (pointList
+	 (pt 500 -890) (pt 530 -890)))))
+      (net  (name VIN
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 373 80)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 437 -180)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 680 -113)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 707 -40)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 897 -20)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1147 -120)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 373 -280)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 707 -400)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 897 -420)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 680 -473)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1347 -120)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 687 110)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 657 -710)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 613 -880)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1697 30)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1887 50)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1887 -100)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 830 -1073)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1907 -560)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1757 -560)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1757 -670)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1907 -670)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1207 -250)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1347 0)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1887 200)))) (joined
+	 (portRef  VIN)
+	 (portRef  VDD (instanceRef I6))
+	 (portRef  VDD (instanceRef I20))
+	 (portRef  ISO (instanceRef I36))
+	 (portRef  VDD (instanceRef I36))
+	 (portRef  ISO (instanceRef I12))
+	 (portRef  VDD (instanceRef I12))
+	 (portRef  ISO (instanceRef NM0))
+	 (portRef  ISO (instanceRef NM2))
+	 (portRef  ISO (instanceRef I11))
+	 (portRef  VDD (instanceRef I11))
+	 (portRef  ISO (instanceRef I4))
+	 (portRef  VDD (instanceRef I4))
+	 (portRef  ISO (instanceRef I27))
+	 (portRef  VDD (instanceRef I27))
+	 (portRef  ISO (instanceRef I10))
+	 (portRef  VDD (instanceRef I10))
+	 (portRef  ISO (instanceRef I9))
+	 (portRef  VDD (instanceRef I9))
+	 (portRef  ISO (instanceRef I2))
+	 (portRef  VDD (instanceRef I2))
+	 (portRef  ISO (instanceRef I47))
+	 (portRef  VDD (instanceRef I47))
+	 (portRef  ISO (instanceRef I8))
+	 (portRef  VDD (instanceRef I8))
+	 (portRef  ISO (instanceRef I48))
+	 (portRef  VDD (instanceRef I48))
+	 (portRef  ISO (instanceRef I45))
+	 (portRef  VDD (instanceRef I45))
+	 (portRef  ISO (instanceRef I44))
+	 (portRef  VDD (instanceRef I44))
+	 (portRef  ISO (instanceRef I49))
+	 (portRef  VDD (instanceRef I49))
+	 (portRef  ISO (instanceRef I46))
+	 (portRef  VDD (instanceRef I46))
+	 (portRef  ISO (instanceRef I43))
+	 (portRef  VDD (instanceRef I43)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1880 190) (pt 1880 220))))
+       (figure wire (path (pointList
+	 (pt 1880 220) (pt 1880 240))))
+       (figure wire (path (pointList
+	 (pt 1340 -10) (pt 1340 30))))
+       (figure wire (path (pointList
+	 (pt 1200 -260) (pt 1200 -220))))
+       (figure wire (path (pointList
+	 (pt 1200 -220) (pt 1200 -200))))
+       (figure wire (path (pointList
+	 (pt 1340 30) (pt 1340 50))))
+       (figure wire (path (pointList
+	 (pt 1900 -680) (pt 1900 -640))))
+       (figure wire (path (pointList
+	 (pt 890 -400) (pt 890 -380))))
+       (figure wire (path (pointList
+	 (pt 650 -680) (pt 650 -660))))
+       (figure wire (path (pointList
+	 (pt 1750 -680) (pt 1750 -640))))
+       (figure wire (path (pointList
+	 (pt 430 -150) (pt 430 -130))))
+       (figure wire (path (pointList
+	 (pt 1750 -570) (pt 1750 -530))))
+       (figure wire (path (pointList
+	 (pt 1750 -530) (pt 1750 -510))))
+       (figure wire (path (pointList
+	 (pt 1900 -570) (pt 1900 -530))))
+       (figure wire (path (pointList
+	 (pt 1900 -530) (pt 1900 -510))))
+       (figure wire (path (pointList
+	 (pt 810 -1080) (pt 850 -1080))))
+       (figure wire (path (pointList
+	 (pt 1690 20) (pt 1690 60))))
+       (figure wire (path (pointList
+	 (pt 1880 -70) (pt 1880 -50))))
+       (figure wire (path (pointList
+	 (pt 890 0) (pt 890 20))))
+       (figure wire (path (pointList
+	 (pt 1880 70) (pt 1880 90))))
+       (figure wire (path (pointList
+	 (pt 1690 60) (pt 1690 80))))
+       (figure wire (path (pointList
+	 (pt 1140 -90) (pt 1140 -70))))
+       (figure wire (path (pointList
+	 (pt 620 -900) (pt 620 -860))))
+       (figure wire (path (pointList
+	 (pt 700 -370) (pt 700 -350))))
+       (figure wire (path (pointList
+	 (pt 1900 -640) (pt 1900 -620))))
+       (figure wire (path (pointList
+	 (pt 650 -720) (pt 650 -680))))
+       (figure wire (path (pointList
+	 (pt 680 140) (pt 680 160))))
+       (figure wire (path (pointList
+	 (pt 680 100) (pt 680 140))))
+       (figure wire (path (pointList
+	 (pt 1340 -90) (pt 1340 -70))))
+       (figure wire (path (pointList
+	 (pt 1340 -130) (pt 1340 -90))))
+       (figure wire (path (pointList
+	 (pt 660 -480) (pt 700 -480))))
+       (figure wire (path (pointList
+	 (pt 700 -410) (pt 700 -370))))
+       (figure wire (path (pointList
+	 (pt 1750 -640) (pt 1750 -620))))
+       (figure wire (path (pointList
+	 (pt 380 -300) (pt 380 -260))))
+       (figure wire (path (pointList
+	 (pt 890 -430) (pt 890 -400))))
+       (figure wire (path (pointList
+	 (pt 1140 -130) (pt 1140 -90))))
+       (figure wire (path (pointList
+	 (pt 1880 40) (pt 1880 70))))
+       (figure wire (path (pointList
+	 (pt 1880 -110) (pt 1880 -70))))
+       (figure wire (path (pointList
+	 (pt 890 -30) (pt 890 0))))
+       (figure wire (path (pointList
+	 (pt 700 -50) (pt 700 -10))))
+       (figure wire (path (pointList
+	 (pt 700 -10) (pt 700 10))))
+       (figure wire (path (pointList
+	 (pt 660 -120) (pt 700 -120))))
+       (figure wire (path (pointList
+	 (pt 430 -190) (pt 440 -190))))
+       (figure wire (path (pointList
+	 (pt 430 -190) (pt 430 -150))))
+       (figure wire (path (pointList
+	 (pt 380 60) (pt 380 100)))))
+      (net SD_SWIRE_VIN (joined
+	 (portRef  SD_SWIRE_VIN)
+	 (portRef  Y (instanceRef I43)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1980 -520) (pt 2030 -520)))))
+      (net UVLO_VDD (joined
+	 (portRef  UVLO_VDD)
+	 (portRef  A (instanceRef I14)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1050 -780) (pt 1100 -780)))))
+      (net net66 (joined
+	 (portRef  B (instanceRef I9))
+	 (portRef  Y (instanceRef I27)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 780 0) (pt 810 0)))))
+      (net net0115 (joined
+	 (portRef  A (instanceRef I22))
+	 (portRef  Y (instanceRef I23)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1720 -950) (pt 1790 -950)))))
+      (net SD_ENO3_VIN (joined
+	 (portRef  SD_ENO3_VIN)
+	 (portRef  Y (instanceRef I46)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1980 -630) (pt 2030 -630)))))
+    (net (array (rename &_60__42_3_62_SUB "<*3>SUB") 3)
+	(joined
+	 (portList
+		(portRef SUB (instanceRef (member I31_60_2TO0_62_ 0)))
+		(portRef SUB (instanceRef (member I31_60_2TO0_62_ 1)))
+		(portRef SUB (instanceRef (member I31_60_2TO0_62_ 2))))
+	 (portList
+		(portRef SUB (instanceRef (member I30_60_2TO0_62_ 0)))
+		(portRef SUB (instanceRef (member I30_60_2TO0_62_ 1)))
+		(portRef SUB (instanceRef (member I30_60_2TO0_62_ 2))))
+	 (portList
+		(portRef SUB (instanceRef (member NM1_60_2TO0_62_ 0)))
+		(portRef SUB (instanceRef (member NM1_60_2TO0_62_ 1)))
+		(portRef SUB (instanceRef (member NM1_60_2TO0_62_ 2))))
+	 (portList
+		(portRef SUB (instanceRef (member I32_60_2TO0_62_ 0)))
+		(portRef SUB (instanceRef (member I32_60_2TO0_62_ 1)))
+		(portRef SUB (instanceRef (member I32_60_2TO0_62_ 2))))
+	 (portList
+		(portRef SUB (instanceRef (member I35_60_2TO0_62_ 0)))
+		(portRef SUB (instanceRef (member I35_60_2TO0_62_ 1)))
+		(portRef SUB (instanceRef (member I35_60_2TO0_62_ 2))))
+	 (portList
+		(portRef SUB (instanceRef (member I34_60_2TO0_62_ 0)))
+		(portRef SUB (instanceRef (member I34_60_2TO0_62_ 1)))
+		(portRef SUB (instanceRef (member I34_60_2TO0_62_ 2))))
+	 (portList
+		(portRef SUB (instanceRef (member I33_60_2TO0_62_ 0)))
+		(portRef SUB (instanceRef (member I33_60_2TO0_62_ 1)))
+		(portRef SUB (instanceRef (member I33_60_2TO0_62_ 2))))))
+      (net net63 (joined
+	 (portRef  INP (instanceRef I20))
+	 (portRef  Y (instanceRef I21)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 290 10) (pt 310 10))))
+       (figure wire (path (pointList
+	 (pt 290 10) (pt 290 70))))
+       (figure wire (path (pointList
+	 (pt 260 70) (pt 290 70)))))
+      (net  (name VDD
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 173 10)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 173 110)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt -27 -120)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt -27 -20)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt -27 -380)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 173 -350)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 173 -250)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt -27 -480)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1193 -300)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1233 -290)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1133 -840)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1133 -740)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1283 -840)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1283 -740)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1213 240)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1253 250)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1593 -880)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1593 -780)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1823 -880)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1823 -780)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1283 -690)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1283 -590)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1823 -1010)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1823 -910)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1593 -1010)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1593 -910)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1593 -1150)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1593 -1050)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1823 -1150)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1823 -1050)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 53 -930)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 53 -830)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 63 -1090)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 63 -990)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 53 -770)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 53 -670)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 450 -1013)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 413 -950)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 413 -850)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1803 -210)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1843 -200)))) (joined
+	 (portRef  VDD)
+	 (portRef  ISO (instanceRef I3))
+	 (portRef  VDD (instanceRef I3))
+	 (portRef  ISO (instanceRef I0))
+	 (portRef  VDD (instanceRef I0))
+	 (portRef  ISO (instanceRef I7))
+	 (portRef  VDD (instanceRef I7))
+	 (portRef  ISO (instanceRef I21))
+	 (portRef  VDD (instanceRef I21))
+	 (portRef  ISO (instanceRef I14))
+	 (portRef  VDD (instanceRef I14))
+	 (portRef  VDD (instanceRef I5))
+	 (portRef  VDD (instanceRef I16))
+	 (portRef  ISO (instanceRef I5))
+	 (portRef  ISO (instanceRef I16))
+	 (portRef  ISO (instanceRef I15))
+	 (portRef  VDD (instanceRef I15))
+	 (portRef  ISO (instanceRef I19))
+	 (portRef  VDD (instanceRef I19))
+	 (portRef  ISO (instanceRef I25))
+	 (portRef  VDD (instanceRef I25))
+	 (portRef  ISO (instanceRef I23))
+	 (portRef  VDD (instanceRef I23))
+	 (portRef  ISO (instanceRef I17))
+	 (portRef  VDD (instanceRef I17))
+	 (portRef  ISO (instanceRef I24))
+	 (portRef  VDD (instanceRef I24))
+	 (portRef  ISO (instanceRef I22))
+	 (portRef  VDD (instanceRef I22))
+	 (portRef  ISO (instanceRef I18))
+	 (portRef  VDD (instanceRef I18)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1850 -230) (pt 1850 -180))))
+       (figure wire (path (pointList
+	 (pt 1810 -230) (pt 1810 -190))))
+       (figure wire (path (pointList
+	 (pt 520 -970) (pt 550 -970))))
+       (figure wire (path (pointList
+	 (pt 520 -1020) (pt 520 -970))))
+       (figure wire (path (pointList
+	 (pt 360 -1020) (pt 520 -1020))))
+       (figure wire (path (pointList
+	 (pt 420 -880) (pt 420 -840))))
+       (figure wire (path (pointList
+	 (pt 420 -950) (pt 420 -900))))
+       (figure wire (path (pointList
+	 (pt 360 -890) (pt 380 -890))))
+       (figure wire (path (pointList
+	 (pt 360 -1020) (pt 360 -890))))
+       (figure wire (path (pointList
+	 (pt 0 -710) (pt 20 -710))))
+       (figure wire (path (pointList
+	 (pt 0 -710) (pt 0 -660))))
+       (figure wire (path (pointList
+	 (pt 0 -660) (pt 60 -660))))
+       (figure wire (path (pointList
+	 (pt 60 -700) (pt 60 -660))))
+       (figure wire (path (pointList
+	 (pt 60 -770) (pt 60 -720))))
+       (figure wire (path (pointList
+	 (pt 70 -1020) (pt 70 -980))))
+       (figure wire (path (pointList
+	 (pt 70 -1090) (pt 70 -1040))))
+       (figure wire (path (pointList
+	 (pt -50 -980) (pt 70 -980))))
+       (figure wire (path (pointList
+	 (pt -50 -1050) (pt -20 -1050))))
+       (figure wire (path (pointList
+	 (pt -50 -1010) (pt -20 -1010))))
+       (figure wire (path (pointList
+	 (pt -50 -1010) (pt -50 -980))))
+       (figure wire (path (pointList
+	 (pt -50 -890) (pt -20 -890))))
+       (figure wire (path (pointList
+	 (pt -50 -890) (pt -50 -850))))
+       (figure wire (path (pointList
+	 (pt -50 -850) (pt -50 -820))))
+       (figure wire (path (pointList
+	 (pt 60 -860) (pt 60 -820))))
+       (figure wire (path (pointList
+	 (pt 60 -930) (pt 60 -880))))
+       (figure wire (path (pointList
+	 (pt -50 -850) (pt -20 -850))))
+       (figure wire (path (pointList
+	 (pt 1830 -1080) (pt 1830 -1040))))
+       (figure wire (path (pointList
+	 (pt 1830 -1150) (pt 1830 -1100))))
+       (figure wire (path (pointList
+	 (pt 1600 -1080) (pt 1600 -1040))))
+       (figure wire (path (pointList
+	 (pt 1600 -1150) (pt 1600 -1100))))
+       (figure wire (path (pointList
+	 (pt -50 -820) (pt 60 -820))))
+       (figure wire (path (pointList
+	 (pt 1600 -940) (pt 1600 -900))))
+       (figure wire (path (pointList
+	 (pt 1600 -1010) (pt 1600 -960))))
+       (figure wire (path (pointList
+	 (pt 1830 -940) (pt 1830 -900))))
+       (figure wire (path (pointList
+	 (pt 1830 -1010) (pt 1830 -960))))
+       (figure wire (path (pointList
+	 (pt 1290 -620) (pt 1290 -580))))
+       (figure wire (path (pointList
+	 (pt 1290 -690) (pt 1290 -640))))
+       (figure wire (path (pointList
+	 (pt 1830 -810) (pt 1830 -770))))
+       (figure wire (path (pointList
+	 (pt 1600 -810) (pt 1600 -770))))
+       (figure wire (path (pointList
+	 (pt 1600 -880) (pt 1600 -830))))
+       (figure wire (path (pointList
+	 (pt 1830 -880) (pt 1830 -830))))
+       (figure wire (path (pointList
+	 (pt 1260 220) (pt 1260 270))))
+       (figure wire (path (pointList
+	 (pt 1220 220) (pt 1220 260))))
+       (figure wire (path (pointList
+	 (pt -50 -1050) (pt -50 -1010))))
+       (figure wire (path (pointList
+	 (pt 1290 -770) (pt 1290 -730))))
+       (figure wire (path (pointList
+	 (pt 1290 -840) (pt 1290 -790))))
+       (figure wire (path (pointList
+	 (pt 1140 -770) (pt 1140 -730))))
+       (figure wire (path (pointList
+	 (pt 1140 -840) (pt 1140 -790))))
+       (figure wire (path (pointList
+	 (pt 1240 -320) (pt 1240 -270))))
+       (figure wire (path (pointList
+	 (pt 1200 -320) (pt 1200 -280))))
+       (figure wire (path (pointList
+	 (pt -20 -480) (pt -20 -430))))
+       (figure wire (path (pointList
+	 (pt 180 -280) (pt 180 -240))))
+       (figure wire (path (pointList
+	 (pt 180 -350) (pt 180 -300))))
+       (figure wire (path (pointList
+	 (pt -20 -410) (pt -20 -370))))
+       (figure wire (path (pointList
+	 (pt -20 -50) (pt -20 -10))))
+       (figure wire (path (pointList
+	 (pt -20 -120) (pt -20 -70))))
+       (figure wire (path (pointList
+	 (pt 180 80) (pt 180 120))))
+       (figure wire (path (pointList
+	 (pt 180 10) (pt 180 60)))))
+      (net  (name SDN
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 540 -133)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 540 -493)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 690 -1093)))) (joined
+	 (portRef  Y (instanceRef I36))
+	 (portRef  G (instanceRef NM0))
+	 (portRef  G (instanceRef NM2)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 640 -1100) (pt 750 -1100))))
+       (figure wire (path (pointList
+	 (pt 750 -1100) (pt 870 -1100))))
+       (figure wire (path (pointList
+	 (pt 600 -500) (pt 720 -500))))
+       (figure wire (path (pointList
+	 (pt 490 -500) (pt 600 -500))))
+       (figure wire (path (pointList
+	 (pt 510 -140) (pt 600 -140))))
+       (figure wire (path (pointList
+	 (pt 600 -140) (pt 720 -140)))))
+      (net net61 (joined
+	 (portRef  INN (instanceRef I20))
+	 (portRef  A (instanceRef I21))
+	 (portRef  Y (instanceRef I0)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 60 -60) (pt 120 -60))))
+       (figure wire (path (pointList
+	 (pt 280 -10) (pt 310 -10))))
+       (figure wire (path (pointList
+	 (pt 120 70) (pt 140 70))))
+       (figure wire (path (pointList
+	 (pt 280 -60) (pt 280 -10))))
+       (figure wire (path (pointList
+	 (pt 120 -60) (pt 280 -60))))
+       (figure wire (path (pointList
+	 (pt 120 -60) (pt 120 70)))))
+      (net net0116 (joined
+	 (portRef  A (instanceRef I18))
+	 (portRef  Y (instanceRef I17)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1720 -820) (pt 1790 -820)))))
+      (net ENO3_VIN (joined
+	 (portRef  ENO3_VIN)
+	 (portRef  A (instanceRef I12)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 530 -670) (pt 610 -670)))))
+    (net (array (rename &_60__42_3_62_dummy_60_0_62_ "<*3>dummy<0>") 3)
+	(joined
+	 (portList
+		(portRef A (instanceRef (member I32_60_2TO0_62_ 0)))
+		(portRef A (instanceRef (member I32_60_2TO0_62_ 1)))
+		(portRef A (instanceRef (member I32_60_2TO0_62_ 2))))
+	 (portList
+		(portRef IN (instanceRef (member I35_60_2TO0_62_ 0)))
+		(portRef IN (instanceRef (member I35_60_2TO0_62_ 1)))
+		(portRef IN (instanceRef (member I35_60_2TO0_62_ 2))))
+	 (portList
+		(portRef B (instanceRef (member I34_60_2TO0_62_ 0)))
+		(portRef B (instanceRef (member I34_60_2TO0_62_ 1)))
+		(portRef B (instanceRef (member I34_60_2TO0_62_ 2))))
+	 (portList
+		(portRef A (instanceRef (member I34_60_2TO0_62_ 0)))
+		(portRef A (instanceRef (member I34_60_2TO0_62_ 1)))
+		(portRef A (instanceRef (member I34_60_2TO0_62_ 2))))
+	 (portList
+		(portRef A (instanceRef (member I33_60_2TO0_62_ 0)))
+		(portRef A (instanceRef (member I33_60_2TO0_62_ 1)))
+		(portRef A (instanceRef (member I33_60_2TO0_62_ 2))))))
+    (net (array (rename net0100_60_0TO3_62_ "net0100<0:3>") 4)
+	(joined
+	 (portList
+		(portRef noConn (instanceRef (member I38_60_3TO0_62_ 0)))
+		(portRef noConn (instanceRef (member I38_60_3TO0_62_ 1)))
+		(portRef noConn (instanceRef (member I38_60_3TO0_62_ 2)))
+		(portRef noConn (instanceRef (member I38_60_3TO0_62_ 3))))
+	 (portList
+		(portRef Y (instanceRef (member I28_60_3TO0_62_ 0)))
+		(portRef Y (instanceRef (member I28_60_3TO0_62_ 1)))
+		(portRef Y (instanceRef (member I28_60_3TO0_62_ 2)))
+		(portRef Y (instanceRef (member I28_60_3TO0_62_ 3)))))
+       (figure wire (path (pointList
+	 (pt 180 -1030) (pt 220 -1030)))))
+    (net (array (rename net099_60_0TO3_62_ "net099<0:3>") 4)
+	(joined
+	 (portList
+		(portRef noConn (instanceRef (member I37_60_3TO0_62_ 0)))
+		(portRef noConn (instanceRef (member I37_60_3TO0_62_ 1)))
+		(portRef noConn (instanceRef (member I37_60_3TO0_62_ 2)))
+		(portRef noConn (instanceRef (member I37_60_3TO0_62_ 3))))
+	 (portList
+		(portRef Y (instanceRef (member I26_60_3TO0_62_ 0)))
+		(portRef Y (instanceRef (member I26_60_3TO0_62_ 1)))
+		(portRef Y (instanceRef (member I26_60_3TO0_62_ 2)))
+		(portRef Y (instanceRef (member I26_60_3TO0_62_ 3)))))
+       (figure wire (path (pointList
+	 (pt 180 -870) (pt 220 -870)))))
+      (net SHUTDOWN (joined
+	 (portRef  SHUTDOWN)
+	 (portRef  Y (instanceRef I8)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1420 -80) (pt 1540 -80)))))
+      (net net088 (joined
+	 (portRef  Y (instanceRef I47))
+	 (portRef  A (instanceRef I8)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1320 -210) (pt 1360 -210))))
+       (figure wire (path (pointList
+	 (pt 1290 -160) (pt 1360 -160))))
+       (figure wire (path (pointList
+	 (pt 1360 -210) (pt 1360 -160))))
+       (figure wire (path (pointList
+	 (pt 1290 -160) (pt 1290 -80))))
+       (figure wire (path (pointList
+	 (pt 1290 -80) (pt 1300 -80)))))
+      (net net097 (joined
+	 (portRef  A (instanceRef I17))
+	 (portRef  A (instanceRef I23))
+	 (portRef  A (instanceRef I25))
+	 (portRef  Y (instanceRef I15)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1490 -1070) (pt 1520 -1070))))
+       (figure wire (path (pointList
+	 (pt 1490 -1070) (pt 1490 -930))))
+       (figure wire (path (pointList
+	 (pt 1490 -930) (pt 1490 -800))))
+       (figure wire (path (pointList
+	 (pt 1490 -930) (pt 1520 -930))))
+       (figure wire (path (pointList
+	 (pt 1370 -780) (pt 1490 -780))))
+       (figure wire (path (pointList
+	 (pt 1490 -800) (pt 1490 -780))))
+       (figure wire (path (pointList
+	 (pt 1490 -800) (pt 1520 -800)))))
+      (net net046 (joined
+	 (portRef  INN (instanceRef I6))
+	 (portRef  A (instanceRef I7))
+	 (portRef  Y (instanceRef I3)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 280 -370) (pt 310 -370))))
+       (figure wire (path (pointList
+	 (pt 280 -420) (pt 280 -370))))
+       (figure wire (path (pointList
+	 (pt 120 -420) (pt 280 -420))))
+       (figure wire (path (pointList
+	 (pt 120 -290) (pt 140 -290))))
+       (figure wire (path (pointList
+	 (pt 120 -420) (pt 120 -290))))
+       (figure wire (path (pointList
+	 (pt 60 -420) (pt 120 -420)))))
+      (net  (name GND
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 373 -80)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 193 110)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 457 -110)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 630 -183)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 727 30)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 917 -360)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt -7 -20)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 917 40)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1927 -600)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt -7 -380)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 193 -250)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 373 -440)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 727 -330)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1167 -50)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 630 -543)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1907 -30)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1367 -50)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1193 -460)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1153 -740)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1303 -740)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1213 80)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1613 -780)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 677 -640)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1843 -780)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1303 -590)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1843 -910)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1613 -910)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1613 -1050)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1843 -1050)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 73 -830)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 83 -990)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 73 -670)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 613 -1040)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 433 -850)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1907 110)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1803 -370)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 780 -1143)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1777 -490)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1777 -600)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1927 -490)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 707 160)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1717 100)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1227 -180)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1367 70)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1907 260)))) (joined
+	 (portRef  GND)
+	 (portRef  VSS (instanceRef I3))
+	 (portRef  VSS (instanceRef I0))
+	 (portRef  VSS (instanceRef I7))
+	 (portRef  VSS (instanceRef I21))
+	 (portRef  GND (instanceRef I6))
+	 (portRef  GND (instanceRef I20))
+	 (portRef  VSS (instanceRef I36))
+	 (portRef  S (instanceRef NM0))
+	 (portRef  S (instanceRef NM2))
+	 (portRef  B (instanceRef NM0))
+	 (portRef  B (instanceRef NM2))
+	 (portRef  VSS (instanceRef I12))
+	 (portRef  VSS (instanceRef I11))
+	 (portRef  VSS (instanceRef I4))
+	 (portRef  VSS (instanceRef I27))
+	 (portRef  VSS (instanceRef I10))
+	 (portRef  VSS (instanceRef I9))
+	 (portRef  VSS (instanceRef I14))
+	 (portRef  VSS (instanceRef I2))
+	 (portRef  GND (instanceRef I5))
+	 (portRef  VSS (instanceRef I47))
+	 (portRef  GND (instanceRef I16))
+	 (portRef  VSS (instanceRef I15))
+	 (portRef  VSS (instanceRef I19))
+	 (portRef  VSS (instanceRef I8))
+	 (portRef  VSS (instanceRef I48))
+	 (portRef  VSS (instanceRef I25))
+	 (portRef  VSS (instanceRef I23))
+	 (portRef  VSS (instanceRef I17))
+	 (portRef  VSS (instanceRef I45))
+	 (portRef  VSS (instanceRef I44))
+	 (portRef  VSS (instanceRef I24))
+	 (portRef  VSS (instanceRef I22))
+	 (portRef  VSS (instanceRef I18))
+	 (portRef  VSS (instanceRef I49))
+	 (portRef  VSS (instanceRef I46))
+	 (portRef  VSS (instanceRef I43)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1900 240) (pt 1900 280))))
+       (figure wire (path (pointList
+	 (pt 1360 50) (pt 1360 90))))
+       (figure wire (path (pointList
+	 (pt 1220 -200) (pt 1220 -160))))
+       (figure wire (path (pointList
+	 (pt 1710 80) (pt 1710 120))))
+       (figure wire (path (pointList
+	 (pt 700 160) (pt 700 200))))
+       (figure wire (path (pointList
+	 (pt 1160 -70) (pt 1160 -30))))
+       (figure wire (path (pointList
+	 (pt 1920 -510) (pt 1920 -470))))
+       (figure wire (path (pointList
+	 (pt 1770 -510) (pt 1770 -470))))
+       (figure wire (path (pointList
+	 (pt 800 -1150) (pt 800 -1110))))
+       (figure wire (path (pointList
+	 (pt 790 -1150) (pt 800 -1150))))
+       (figure wire (path (pointList
+	 (pt 790 -1150) (pt 790 -1130))))
+       (figure wire (path (pointList
+	 (pt 760 -1150) (pt 790 -1150))))
+       (figure wire (path (pointList
+	 (pt 1920 -620) (pt 1920 -580))))
+       (figure wire (path (pointList
+	 (pt 1810 -390) (pt 1810 -350))))
+       (figure wire (path (pointList
+	 (pt 1900 90) (pt 1900 130))))
+       (figure wire (path (pointList
+	 (pt 440 -880) (pt 440 -840))))
+       (figure wire (path (pointList
+	 (pt 620 -1060) (pt 620 -1020))))
+       (figure wire (path (pointList
+	 (pt 80 -700) (pt 80 -660))))
+       (figure wire (path (pointList
+	 (pt 90 -1020) (pt 90 -980))))
+       (figure wire (path (pointList
+	 (pt 80 -860) (pt 80 -820))))
+       (figure wire (path (pointList
+	 (pt 1850 -1080) (pt 1850 -1040))))
+       (figure wire (path (pointList
+	 (pt 1620 -1080) (pt 1620 -1040))))
+       (figure wire (path (pointList
+	 (pt 1620 -940) (pt 1620 -900))))
+       (figure wire (path (pointList
+	 (pt 670 -660) (pt 670 -620))))
+       (figure wire (path (pointList
+	 (pt 1850 -940) (pt 1850 -900))))
+       (figure wire (path (pointList
+	 (pt 1310 -620) (pt 1310 -580))))
+       (figure wire (path (pointList
+	 (pt 1850 -810) (pt 1850 -770))))
+       (figure wire (path (pointList
+	 (pt 1620 -810) (pt 1620 -770))))
+       (figure wire (path (pointList
+	 (pt 1900 -50) (pt 1900 -10))))
+       (figure wire (path (pointList
+	 (pt 1220 60) (pt 1220 100))))
+       (figure wire (path (pointList
+	 (pt 1310 -770) (pt 1310 -730))))
+       (figure wire (path (pointList
+	 (pt 1160 -770) (pt 1160 -730))))
+       (figure wire (path (pointList
+	 (pt 1200 -480) (pt 1200 -440))))
+       (figure wire (path (pointList
+	 (pt 910 -380) (pt 910 -350))))
+       (figure wire (path (pointList
+	 (pt 1360 -70) (pt 1360 -30))))
+       (figure wire (path (pointList
+	 (pt 650 -550) (pt 650 -510))))
+       (figure wire (path (pointList
+	 (pt 640 -550) (pt 650 -550))))
+       (figure wire (path (pointList
+	 (pt 640 -550) (pt 640 -530))))
+       (figure wire (path (pointList
+	 (pt 610 -550) (pt 640 -550))))
+       (figure wire (path (pointList
+	 (pt 1770 -620) (pt 1770 -580))))
+       (figure wire (path (pointList
+	 (pt 380 -460) (pt 380 -420))))
+       (figure wire (path (pointList
+	 (pt 200 -280) (pt 200 -240))))
+       (figure wire (path (pointList
+	 (pt 0 -410) (pt 0 -370))))
+       (figure wire (path (pointList
+	 (pt 0 -50) (pt 0 -10))))
+       (figure wire (path (pointList
+	 (pt 910 20) (pt 910 50))))
+       (figure wire (path (pointList
+	 (pt 720 10) (pt 720 50))))
+       (figure wire (path (pointList
+	 (pt 650 -190) (pt 650 -150))))
+       (figure wire (path (pointList
+	 (pt 640 -190) (pt 650 -190))))
+       (figure wire (path (pointList
+	 (pt 640 -190) (pt 640 -170))))
+       (figure wire (path (pointList
+	 (pt 610 -190) (pt 640 -190))))
+       (figure wire (path (pointList
+	 (pt 450 -130) (pt 450 -90))))
+       (figure wire (path (pointList
+	 (pt 720 -350) (pt 720 -310))))
+       (figure wire (path (pointList
+	 (pt 200 80) (pt 200 120))))
+       (figure wire (path (pointList
+	 (pt 380 -100) (pt 380 -60)))))
+      (net net0138 (joined
+	 (portRef  A (instanceRef I46))
+	 (portRef  Y (instanceRef I45)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1830 -630) (pt 1860 -630)))))
+      (net  (name SUB
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 423 -80)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 193 10)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 917 -420)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 570 -153)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt -7 -120)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 73 -930)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1367 -110)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 193 -350)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt -7 -480)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 727 -30)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 73 -770)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1167 -110)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1843 -870)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1843 -1000)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 677 -700)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1613 -870)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 727 -390)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1613 -1140)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1843 -1140)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 663 -1040)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1153 -820)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 83 -1090)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1303 -680)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1303 -830)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1907 50)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 917 -20)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1927 -660)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1907 -90)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R90)
+	(origin (pt 1613 -1000)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1777 -660)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1777 -550)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1927 -550)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 707 120)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 457 -170)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 580 -513)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 437 -440)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1267 80)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1247 -460)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1857 -370)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1717 40)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 447 -940)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 730 -1113)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1227 -240)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1367 10)))
+	(display wire
+	(justify UPPERCENTER)
+	(orientation R90)
+	(origin (pt 1907 200)))) (joined
+	 (portRef  SUB)
+	 (portRef  SUB (instanceRef I3))
+	 (portRef  SUB (instanceRef I0))
+	 (portRef  SUB (instanceRef I7))
+	 (portRef  SUB (instanceRef I21))
+	 (portRef  SUB (instanceRef I6))
+	 (portRef  SUB (instanceRef I20))
+	 (portRef  SUB (instanceRef I36))
+	 (portRef  SUB (instanceRef NM0))
+	 (portRef  SUB (instanceRef NM2))
+	 (portRef  SUB (instanceRef I12))
+	 (portRef  SUB (instanceRef I11))
+	 (portRef  SUB (instanceRef I4))
+	 (portRef  SUB (instanceRef I27))
+	 (portRef  SUB (instanceRef I10))
+	 (portRef  SUB (instanceRef I9))
+	 (portRef  SUB (instanceRef I14))
+	 (portRef  SUB (instanceRef I2))
+	 (portRef  SUB (instanceRef I47))
+	 (portRef  SUB (instanceRef I5))
+	 (portRef  SUB (instanceRef I16))
+	 (portRef  SUB (instanceRef I15))
+	 (portRef  SUB (instanceRef I19))
+	 (portRef  SUB (instanceRef I8))
+	 (portRef  SUB (instanceRef I48))
+	 (portRef  SUB (instanceRef I25))
+	 (portRef  SUB (instanceRef I23))
+	 (portRef  SUB (instanceRef I17))
+	 (portRef  SUB (instanceRef I45))
+	 (portRef  SUB (instanceRef I44))
+	 (portRef  SUB (instanceRef I24))
+	 (portRef  SUB (instanceRef I22))
+	 (portRef  SUB (instanceRef I18))
+	 (portRef  SUB (instanceRef I49))
+	 (portRef  SUB (instanceRef I46))
+	 (portRef  SUB (instanceRef I43)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1900 180) (pt 1900 220))))
+       (figure wire (path (pointList
+	 (pt 1360 -10) (pt 1360 30))))
+       (figure wire (path (pointList
+	 (pt 1220 -260) (pt 1220 -220))))
+       (figure wire (path (pointList
+	 (pt 1710 20) (pt 1710 60))))
+       (figure wire (path (pointList
+	 (pt 450 -190) (pt 450 -150))))
+       (figure wire (path (pointList
+	 (pt 1770 -570) (pt 1770 -530))))
+       (figure wire (path (pointList
+	 (pt 1770 -680) (pt 1770 -640))))
+       (figure wire (path (pointList
+	 (pt 1920 -680) (pt 1920 -640))))
+       (figure wire (path (pointList
+	 (pt 1850 -390) (pt 1850 -350))))
+       (figure wire (path (pointList
+	 (pt 700 -1120) (pt 760 -1120))))
+       (figure wire (path (pointList
+	 (pt 1160 -130) (pt 1160 -90))))
+       (figure wire (path (pointList
+	 (pt 1900 -110) (pt 1900 -70))))
+       (figure wire (path (pointList
+	 (pt 440 -960) (pt 440 -900))))
+       (figure wire (path (pointList
+	 (pt 670 -1060) (pt 670 -1020))))
+       (figure wire (path (pointList
+	 (pt 80 -770) (pt 80 -720))))
+       (figure wire (path (pointList
+	 (pt 90 -1090) (pt 90 -1040))))
+       (figure wire (path (pointList
+	 (pt 80 -930) (pt 80 -880))))
+       (figure wire (path (pointList
+	 (pt 1850 -1160) (pt 1850 -1100))))
+       (figure wire (path (pointList
+	 (pt 1620 -1160) (pt 1620 -1100))))
+       (figure wire (path (pointList
+	 (pt 1620 -1020) (pt 1620 -960))))
+       (figure wire (path (pointList
+	 (pt 1850 -1020) (pt 1850 -960))))
+       (figure wire (path (pointList
+	 (pt 1310 -700) (pt 1310 -640))))
+       (figure wire (path (pointList
+	 (pt 1850 -890) (pt 1850 -830))))
+       (figure wire (path (pointList
+	 (pt 1620 -890) (pt 1620 -830))))
+       (figure wire (path (pointList
+	 (pt 1260 60) (pt 1260 100))))
+       (figure wire (path (pointList
+	 (pt 1310 -850) (pt 1310 -790))))
+       (figure wire (path (pointList
+	 (pt 1160 -840) (pt 1160 -790))))
+       (figure wire (path (pointList
+	 (pt 1240 -480) (pt 1240 -440))))
+       (figure wire (path (pointList
+	 (pt 670 -720) (pt 670 -680))))
+       (figure wire (path (pointList
+	 (pt 700 100) (pt 700 140))))
+       (figure wire (path (pointList
+	 (pt 720 -50) (pt 720 -10))))
+       (figure wire (path (pointList
+	 (pt 0 -480) (pt 0 -430))))
+       (figure wire (path (pointList
+	 (pt 910 -440) (pt 910 -400))))
+       (figure wire (path (pointList
+	 (pt 550 -520) (pt 610 -520))))
+       (figure wire (path (pointList
+	 (pt 720 -410) (pt 720 -370))))
+       (figure wire (path (pointList
+	 (pt 1920 -570) (pt 1920 -530))))
+       (figure wire (path (pointList
+	 (pt 430 -460) (pt 430 -420))))
+       (figure wire (path (pointList
+	 (pt 200 -350) (pt 200 -300))))
+       (figure wire (path (pointList
+	 (pt 1900 30) (pt 1900 70))))
+       (figure wire (path (pointList
+	 (pt 1360 -130) (pt 1360 -90))))
+       (figure wire (path (pointList
+	 (pt 0 -120) (pt 0 -70))))
+       (figure wire (path (pointList
+	 (pt 910 -40) (pt 910 0))))
+       (figure wire (path (pointList
+	 (pt 550 -160) (pt 610 -160))))
+       (figure wire (path (pointList
+	 (pt 200 10) (pt 200 60))))
+       (figure wire (path (pointList
+	 (pt 430 -100) (pt 430 -60)))))
+      (net net089 (joined
+	 (portRef  A (instanceRef I19))
+	 (portRef  A (instanceRef I15))
+	 (portRef  Y (instanceRef I14)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1240 -780) (pt 1240 -630))))
+       (figure wire (path (pointList
+	 (pt 1240 -780) (pt 1250 -780))))
+       (figure wire (path (pointList
+	 (pt 1240 -630) (pt 1250 -630))))
+       (figure wire (path (pointList
+	 (pt 1220 -780) (pt 1240 -780)))))
+      (net OFF_ENO3_VDD (joined
+	 (portRef  OFF_ENO3_VDD)
+	 (portRef  A (instanceRef I3)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt -90 -420) (pt -60 -420)))))
+      (net  (name PWD
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1100 -223)))) (joined
+	 (portRef  PWD)
+	 (portRef  A (instanceRef I36))
+	 (portRef  B (instanceRef I47)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1070 -230) (pt 1120 -230))))
+       (figure wire (path (pointList
+	 (pt 270 -140) (pt 390 -140)))))
+    (net (array (rename &_60__42_3_62_GND "<*3>GND") 3)
+	(joined
+	 (portList
+		(portRef VSS (instanceRef (member I31_60_2TO0_62_ 0)))
+		(portRef VSS (instanceRef (member I31_60_2TO0_62_ 1)))
+		(portRef VSS (instanceRef (member I31_60_2TO0_62_ 2))))
+	 (portList
+		(portRef GND (instanceRef (member I30_60_2TO0_62_ 0)))
+		(portRef GND (instanceRef (member I30_60_2TO0_62_ 1)))
+		(portRef GND (instanceRef (member I30_60_2TO0_62_ 2))))
+	 (portList
+		(portRef S (instanceRef (member NM1_60_2TO0_62_ 0)))
+		(portRef S (instanceRef (member NM1_60_2TO0_62_ 1)))
+		(portRef S (instanceRef (member NM1_60_2TO0_62_ 2))))
+	 (portList
+		(portRef B (instanceRef (member NM1_60_2TO0_62_ 0)))
+		(portRef B (instanceRef (member NM1_60_2TO0_62_ 1)))
+		(portRef B (instanceRef (member NM1_60_2TO0_62_ 2))))
+	 (portList
+		(portRef VSS (instanceRef (member I32_60_2TO0_62_ 0)))
+		(portRef VSS (instanceRef (member I32_60_2TO0_62_ 1)))
+		(portRef VSS (instanceRef (member I32_60_2TO0_62_ 2))))
+	 (portList
+		(portRef GND (instanceRef (member I35_60_2TO0_62_ 0)))
+		(portRef GND (instanceRef (member I35_60_2TO0_62_ 1)))
+		(portRef GND (instanceRef (member I35_60_2TO0_62_ 2))))
+	 (portList
+		(portRef VSS (instanceRef (member I34_60_2TO0_62_ 0)))
+		(portRef VSS (instanceRef (member I34_60_2TO0_62_ 1)))
+		(portRef VSS (instanceRef (member I34_60_2TO0_62_ 2))))
+	 (portList
+		(portRef VSS (instanceRef (member I33_60_2TO0_62_ 0)))
+		(portRef VSS (instanceRef (member I33_60_2TO0_62_ 1)))
+		(portRef VSS (instanceRef (member I33_60_2TO0_62_ 2))))))
+      (net PWD_OSC_VDD (joined
+	 (portRef  PWD_OSC_VDD)
+	 (portRef  Y (instanceRef I19)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1370 -630) (pt 1420 -630)))))
+    (net (array (rename &_60__42_3_62_net0108 "<*3>net0108") 3)
+	(joined
+	 (portList
+		(portRef noConn (instanceRef (member I50_60_2TO0_62_ 0)))
+		(portRef noConn (instanceRef (member I50_60_2TO0_62_ 1)))
+		(portRef noConn (instanceRef (member I50_60_2TO0_62_ 2))))))
+      (net  (name SHUTDOWN_INT_VIN
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1130 -183)))) (joined
+	 (portRef  SHUTDOWN_INT_VIN)
+	 (portRef  A (instanceRef I47))
+	 (portRef  Y (instanceRef I48)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1070 -190) (pt 1120 -190))))
+       (figure wire (path (pointList
+	 (pt 1420 40) (pt 1460 40)))))
+      (net  (name SD_ENO3
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1100 -373)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1660 -623)))) (joined
+	 (portRef  Y (instanceRef I10))
+	 (portRef  B (instanceRef I2))
+	 (portRef  IN (instanceRef I5))
+	 (portRef  A (instanceRef I45)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1640 -630) (pt 1710 -630))))
+       (figure wire (path (pointList
+	 (pt 1040 -380) (pt 1140 -380))))
+       (figure wire (path (pointList
+	 (pt 1010 -380) (pt 1040 -380))))
+       (figure wire (path (pointList
+	 (pt 1040 -100) (pt 1060 -100))))
+       (figure wire (path (pointList
+	 (pt 1040 -380) (pt 1040 -100)))))
+      (net net69 (joined
+	 (portRef  A (instanceRef I48))
+	 (portRef  Y (instanceRef I2)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1260 -80) (pt 1280 -80))))
+       (figure wire (path (pointList
+	 (pt 1280 -80) (pt 1280 40))))
+       (figure wire (path (pointList
+	 (pt 1280 40) (pt 1300 40)))))
+      (net  (name SD_SWIRE
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1030 27)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1660 -513)))) (joined
+	 (portRef  Y (instanceRef I9))
+	 (portRef  A (instanceRef I2))
+	 (portRef  IN (instanceRef I16))
+	 (portRef  A (instanceRef I44)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1640 -520) (pt 1710 -520))))
+       (figure wire (path (pointList
+	 (pt 1040 20) (pt 1040 160))))
+       (figure wire (path (pointList
+	 (pt 1040 160) (pt 1160 160))))
+       (figure wire (path (pointList
+	 (pt 1010 20) (pt 1040 20))))
+       (figure wire (path (pointList
+	 (pt 1040 -60) (pt 1040 20))))
+       (figure wire (path (pointList
+	 (pt 1040 -60) (pt 1060 -60)))))
+    (net  (array  (rename dummy_60_2TO0_62_  (stringDisplay "dummy<2:0>"
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 780 -953))))) 3)
+	(joined
+	 (portList
+		(portRef OUT (instanceRef (member I30_60_2TO0_62_ 0)))
+		(portRef OUT (instanceRef (member I30_60_2TO0_62_ 1)))
+		(portRef OUT (instanceRef (member I30_60_2TO0_62_ 2))))
+	 (portList
+		(portRef D (instanceRef (member NM1_60_2TO0_62_ 0)))
+		(portRef D (instanceRef (member NM1_60_2TO0_62_ 1)))
+		(portRef D (instanceRef (member NM1_60_2TO0_62_ 2)))))
+       (figure wire (path (pointList
+	 (pt 750 -960) (pt 790 -960))))
+       (figure wire (path (pointList
+	 (pt 790 -1070) (pt 790 -960)))))
+      (net  (rename dummy_60_0_62_  (stringDisplay "dummy<0>"
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1590 77)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1750 -33)))
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1700 -283))))) (joined
+	 (portRef  B (instanceRef I49))
+	 (portRef  A (instanceRef I49)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1760 220) (pt 1760 260))))
+       (figure wire (path (pointList
+	 (pt 1760 260) (pt 1800 260))))
+       (figure wire (path (pointList
+	 (pt 1760 220) (pt 1800 220))))
+       (figure wire (path (pointList
+	 (pt 1640 150) (pt 1640 260))))
+       (figure wire (path (pointList
+	 (pt 1640 260) (pt 1760 260))))
+       (figure wire (path (pointList
+	 (pt 1800 110) (pt 1800 150))))
+       (figure wire (path (pointList
+	 (pt 1670 -290) (pt 1750 -290))))
+       (figure wire (path (pointList
+	 (pt 1720 -40) (pt 1780 -40))))
+       (figure wire (path (pointList
+	 (pt 1780 -80) (pt 1800 -80))))
+       (figure wire (path (pointList
+	 (pt 1780 -80) (pt 1780 -40))))
+       (figure wire (path (pointList
+	 (pt 1640 70) (pt 1640 150))))
+       (figure wire (path (pointList
+	 (pt 1560 70) (pt 1640 70))))
+       (figure wire (path (pointList
+	 (pt 1780 -40) (pt 1800 -40))))
+       (figure wire (path (pointList
+	 (pt 1640 150) (pt 1800 150))))
+       (figure wire (path (pointList
+	 (pt 1640 70) (pt 1650 70)))))
+    (net (array (rename &_60__42_4_62_VDD "<*4>VDD") 4)
+	(joined
+	 (portList
+		(portRef B (instanceRef (member I28_60_3TO0_62_ 0)))
+		(portRef B (instanceRef (member I28_60_3TO0_62_ 1)))
+		(portRef B (instanceRef (member I28_60_3TO0_62_ 2)))
+		(portRef B (instanceRef (member I28_60_3TO0_62_ 3))))
+	 (portList
+		(portRef A (instanceRef (member I28_60_3TO0_62_ 0)))
+		(portRef A (instanceRef (member I28_60_3TO0_62_ 1)))
+		(portRef A (instanceRef (member I28_60_3TO0_62_ 2)))
+		(portRef A (instanceRef (member I28_60_3TO0_62_ 3))))
+	 (portList
+		(portRef B (instanceRef (member I26_60_3TO0_62_ 0)))
+		(portRef B (instanceRef (member I26_60_3TO0_62_ 1)))
+		(portRef B (instanceRef (member I26_60_3TO0_62_ 2)))
+		(portRef B (instanceRef (member I26_60_3TO0_62_ 3))))
+	 (portList
+		(portRef A (instanceRef (member I26_60_3TO0_62_ 0)))
+		(portRef A (instanceRef (member I26_60_3TO0_62_ 1)))
+		(portRef A (instanceRef (member I26_60_3TO0_62_ 2)))
+		(portRef A (instanceRef (member I26_60_3TO0_62_ 3))))
+	 (portList
+		(portRef A (instanceRef (member I29_60_3TO0_62_ 0)))
+		(portRef A (instanceRef (member I29_60_3TO0_62_ 1)))
+		(portRef A (instanceRef (member I29_60_3TO0_62_ 2)))
+		(portRef A (instanceRef (member I29_60_3TO0_62_ 3))))
+	 (portList
+		(portRef ISO (instanceRef (member I26_60_3TO0_62_ 0)))
+		(portRef ISO (instanceRef (member I26_60_3TO0_62_ 1)))
+		(portRef ISO (instanceRef (member I26_60_3TO0_62_ 2)))
+		(portRef ISO (instanceRef (member I26_60_3TO0_62_ 3))))
+	 (portList
+		(portRef VDD (instanceRef (member I26_60_3TO0_62_ 0)))
+		(portRef VDD (instanceRef (member I26_60_3TO0_62_ 1)))
+		(portRef VDD (instanceRef (member I26_60_3TO0_62_ 2)))
+		(portRef VDD (instanceRef (member I26_60_3TO0_62_ 3))))
+	 (portList
+		(portRef ISO (instanceRef (member I29_60_3TO0_62_ 0)))
+		(portRef ISO (instanceRef (member I29_60_3TO0_62_ 1)))
+		(portRef ISO (instanceRef (member I29_60_3TO0_62_ 2)))
+		(portRef ISO (instanceRef (member I29_60_3TO0_62_ 3))))
+	 (portList
+		(portRef VDD (instanceRef (member I29_60_3TO0_62_ 0)))
+		(portRef VDD (instanceRef (member I29_60_3TO0_62_ 1)))
+		(portRef VDD (instanceRef (member I29_60_3TO0_62_ 2)))
+		(portRef VDD (instanceRef (member I29_60_3TO0_62_ 3))))
+	 (portList
+		(portRef ISO (instanceRef (member I28_60_3TO0_62_ 0)))
+		(portRef ISO (instanceRef (member I28_60_3TO0_62_ 1)))
+		(portRef ISO (instanceRef (member I28_60_3TO0_62_ 2)))
+		(portRef ISO (instanceRef (member I28_60_3TO0_62_ 3))))
+	 (portList
+		(portRef VDD (instanceRef (member I28_60_3TO0_62_ 0)))
+		(portRef VDD (instanceRef (member I28_60_3TO0_62_ 1)))
+		(portRef VDD (instanceRef (member I28_60_3TO0_62_ 2)))
+		(portRef VDD (instanceRef (member I28_60_3TO0_62_ 3))))))
+    (net (array (rename &_60__42_4_62_GND "<*4>GND") 4)
+	(joined
+	 (portList
+		(portRef VSS (instanceRef (member I26_60_3TO0_62_ 0)))
+		(portRef VSS (instanceRef (member I26_60_3TO0_62_ 1)))
+		(portRef VSS (instanceRef (member I26_60_3TO0_62_ 2)))
+		(portRef VSS (instanceRef (member I26_60_3TO0_62_ 3))))
+	 (portList
+		(portRef VSS (instanceRef (member I29_60_3TO0_62_ 0)))
+		(portRef VSS (instanceRef (member I29_60_3TO0_62_ 1)))
+		(portRef VSS (instanceRef (member I29_60_3TO0_62_ 2)))
+		(portRef VSS (instanceRef (member I29_60_3TO0_62_ 3))))
+	 (portList
+		(portRef VSS (instanceRef (member I28_60_3TO0_62_ 0)))
+		(portRef VSS (instanceRef (member I28_60_3TO0_62_ 1)))
+		(portRef VSS (instanceRef (member I28_60_3TO0_62_ 2)))
+		(portRef VSS (instanceRef (member I28_60_3TO0_62_ 3))))))
+      (net SWIRE_VIN (joined
+	 (portRef  SWIRE_VIN)
+	 (portRef  A (instanceRef I11)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 530 150) (pt 640 150)))))
+      (net  (name SD_SWIRE_VDD
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1360 -963)))) (joined
+	 (portRef  SD_SWIRE_VDD)
+	 (portRef  OUT (instanceRef I16))
+	 (portRef  B (instanceRef I23))
+	 (portRef  B (instanceRef I17)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1400 -970) (pt 1400 -840))))
+       (figure wire (path (pointList
+	 (pt 1400 -970) (pt 1520 -970))))
+       (figure wire (path (pointList
+	 (pt 1330 -970) (pt 1400 -970))))
+       (figure wire (path (pointList
+	 (pt 1400 -840) (pt 1520 -840))))
+       (figure wire (path (pointList
+	 (pt 1360 160) (pt 1420 160)))))
+    (net (array (rename net0130_60_0TO2_62_ "net0130<0:2>") 3)
+	(joined
+	 (portList
+		(portRef Y (instanceRef (member I33_60_2TO0_62_ 0)))
+		(portRef Y (instanceRef (member I33_60_2TO0_62_ 1)))
+		(portRef Y (instanceRef (member I33_60_2TO0_62_ 2))))
+	 (portList
+		(portRef noConn (instanceRef (member I39_60_2TO0_62_ 0)))
+		(portRef noConn (instanceRef (member I39_60_2TO0_62_ 1)))
+		(portRef noConn (instanceRef (member I39_60_2TO0_62_ 2)))))
+       (figure wire (path (pointList
+	 (pt 2000 90) (pt 2040 90)))))
+    (net (array (rename net086_60_0TO3_62_ "net086<0:3>") 4)
+	(joined
+	 (portList
+		(portRef noConn (instanceRef (member I41_60_3TO0_62_ 0)))
+		(portRef noConn (instanceRef (member I41_60_3TO0_62_ 1)))
+		(portRef noConn (instanceRef (member I41_60_3TO0_62_ 2)))
+		(portRef noConn (instanceRef (member I41_60_3TO0_62_ 3))))
+	 (portList
+		(portRef Y (instanceRef (member I29_60_3TO0_62_ 0)))
+		(portRef Y (instanceRef (member I29_60_3TO0_62_ 1)))
+		(portRef Y (instanceRef (member I29_60_3TO0_62_ 2)))
+		(portRef Y (instanceRef (member I29_60_3TO0_62_ 3)))))
+       (figure wire (path (pointList
+	 (pt 140 -710) (pt 180 -710)))))
+      (net net047 (joined
+	 (portRef  B (instanceRef I10))
+	 (portRef  Y (instanceRef I12)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 770 -400) (pt 810 -400))))
+       (figure wire (path (pointList
+	 (pt 770 -670) (pt 770 -400))))
+       (figure wire (path (pointList
+	 (pt 730 -670) (pt 770 -670)))))
+      (net  (name SD_ENO3_VDD
+	(display wire
+	(justify LOWERCENTER)
+	(orientation R0)
+	(origin (pt 1360 -1103)))) (joined
+	 (portRef  SD_ENO3_VDD)
+	 (portRef  OUT (instanceRef I5))
+	 (portRef  B (instanceRef I25)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1330 -1110) (pt 1520 -1110))))
+       (figure wire (path (pointList
+	 (pt 1340 -380) (pt 1420 -380)))))
+      (net OFF_SWIRE_VDD (joined
+	 (portRef  OFF_SWIRE_VDD)
+	 (portRef  A (instanceRef I0)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt -90 -60) (pt -60 -60)))))
+    (net (array (rename net0123_60_0TO2_62_ "net0123<0:2>") 3)
+	(joined
+	 (portList
+		(portRef B (instanceRef (member I33_60_2TO0_62_ 0)))
+		(portRef B (instanceRef (member I33_60_2TO0_62_ 1)))
+		(portRef B (instanceRef (member I33_60_2TO0_62_ 2))))
+	 (portList
+		(portRef Y (instanceRef (member I32_60_2TO0_62_ 0)))
+		(portRef Y (instanceRef (member I32_60_2TO0_62_ 1)))
+		(portRef Y (instanceRef (member I32_60_2TO0_62_ 2)))))
+       (figure wire (path (pointList
+	 (pt 1770 70) (pt 1800 70)))))
+    (net (array (rename &_60__42_4_62_SUB "<*4>SUB") 4)
+	(joined
+	 (portList
+		(portRef SUB (instanceRef (member I26_60_3TO0_62_ 0)))
+		(portRef SUB (instanceRef (member I26_60_3TO0_62_ 1)))
+		(portRef SUB (instanceRef (member I26_60_3TO0_62_ 2)))
+		(portRef SUB (instanceRef (member I26_60_3TO0_62_ 3))))
+	 (portList
+		(portRef SUB (instanceRef (member I29_60_3TO0_62_ 0)))
+		(portRef SUB (instanceRef (member I29_60_3TO0_62_ 1)))
+		(portRef SUB (instanceRef (member I29_60_3TO0_62_ 2)))
+		(portRef SUB (instanceRef (member I29_60_3TO0_62_ 3))))
+	 (portList
+		(portRef SUB (instanceRef (member I28_60_3TO0_62_ 0)))
+		(portRef SUB (instanceRef (member I28_60_3TO0_62_ 1)))
+		(portRef SUB (instanceRef (member I28_60_3TO0_62_ 2)))
+		(portRef SUB (instanceRef (member I28_60_3TO0_62_ 3))))))
+      (net net057 (joined
+	 (portRef  A (instanceRef I9))
+	 (portRef  Y (instanceRef I11)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 760 150) (pt 790 150))))
+       (figure wire (path (pointList
+	 (pt 790 40) (pt 810 40))))
+       (figure wire (path (pointList
+	 (pt 790 40) (pt 790 150)))))
+    (net (array (rename net0113_60_0TO2_62_ "net0113<0:2>") 3)
+	(joined
+	 (portList
+		(portRef noConn (instanceRef (member I42_60_2TO0_62_ 0)))
+		(portRef noConn (instanceRef (member I42_60_2TO0_62_ 1)))
+		(portRef noConn (instanceRef (member I42_60_2TO0_62_ 2))))
+	 (portList
+		(portRef OUT (instanceRef (member I35_60_2TO0_62_ 0)))
+		(portRef OUT (instanceRef (member I35_60_2TO0_62_ 1)))
+		(portRef OUT (instanceRef (member I35_60_2TO0_62_ 2)))))
+       (figure wire (path (pointList
+	 (pt 1950 -290) (pt 1990 -290)))))
+      (net PWD_BIAS_ST2 (joined
+	 (portRef  PWD_BIAS_ST2)
+	 (portRef  Y (instanceRef I24)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1910 -1090) (pt 1970 -1090)))))
+      (net net059 (joined
+	 (portRef  A (instanceRef I10))
+	 (portRef  Y (instanceRef I4)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 780 -360) (pt 810 -360)))))
+      (net net55 (joined
+	 (portRef  A (instanceRef I27))
+	 (portRef  D (instanceRef NM2))
+	 (portRef  OUT (instanceRef I20)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 640 0) (pt 660 0))))
+       (figure wire (path (pointList
+	 (pt 640 -110) (pt 640 0))))
+       (figure wire (path (pointList
+	 (pt 510 0) (pt 640 0)))))
+      (net net049 (joined
+	 (portRef  INP (instanceRef I6))
+	 (portRef  Y (instanceRef I7)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 290 -350) (pt 310 -350))))
+       (figure wire (path (pointList
+	 (pt 290 -350) (pt 290 -290))))
+       (figure wire (path (pointList
+	 (pt 260 -290) (pt 290 -290)))))
+      (net PWD_BIAS_IV (joined
+	 (portRef  PWD_BIAS_IV)
+	 (portRef  Y (instanceRef I22)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1910 -950) (pt 1970 -950)))))
+    (net (array (rename &_60__42_3_62_VIN "<*3>VIN") 3)
+	(joined
+	 (portList
+		(portRef VDD (instanceRef (member I30_60_2TO0_62_ 0)))
+		(portRef VDD (instanceRef (member I30_60_2TO0_62_ 1)))
+		(portRef VDD (instanceRef (member I30_60_2TO0_62_ 2))))
+	 (portList
+		(portRef ISO (instanceRef (member NM1_60_2TO0_62_ 0)))
+		(portRef ISO (instanceRef (member NM1_60_2TO0_62_ 1)))
+		(portRef ISO (instanceRef (member NM1_60_2TO0_62_ 2))))
+	 (portList
+		(portRef ISO (instanceRef (member I32_60_2TO0_62_ 0)))
+		(portRef ISO (instanceRef (member I32_60_2TO0_62_ 1)))
+		(portRef ISO (instanceRef (member I32_60_2TO0_62_ 2))))
+	 (portList
+		(portRef VDD (instanceRef (member I32_60_2TO0_62_ 0)))
+		(portRef VDD (instanceRef (member I32_60_2TO0_62_ 1)))
+		(portRef VDD (instanceRef (member I32_60_2TO0_62_ 2))))
+	 (portList
+		(portRef ISO (instanceRef (member I34_60_2TO0_62_ 0)))
+		(portRef ISO (instanceRef (member I34_60_2TO0_62_ 1)))
+		(portRef ISO (instanceRef (member I34_60_2TO0_62_ 2))))
+	 (portList
+		(portRef VDD (instanceRef (member I34_60_2TO0_62_ 0)))
+		(portRef VDD (instanceRef (member I34_60_2TO0_62_ 1)))
+		(portRef VDD (instanceRef (member I34_60_2TO0_62_ 2))))
+	 (portList
+		(portRef ISO (instanceRef (member I33_60_2TO0_62_ 0)))
+		(portRef ISO (instanceRef (member I33_60_2TO0_62_ 1)))
+		(portRef ISO (instanceRef (member I33_60_2TO0_62_ 2))))
+	 (portList
+		(portRef VDD (instanceRef (member I33_60_2TO0_62_ 0)))
+		(portRef VDD (instanceRef (member I33_60_2TO0_62_ 1)))
+		(portRef VDD (instanceRef (member I33_60_2TO0_62_ 2))))))
+      (net net032 (joined
+	 (portRef  A (instanceRef I4))
+	 (portRef  D (instanceRef NM0))
+	 (portRef  OUT (instanceRef I6)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 640 -470) (pt 640 -360))))
+       (figure wire (path (pointList
+	 (pt 640 -360) (pt 660 -360))))
+       (figure wire (path (pointList
+	 (pt 510 -360) (pt 640 -360)))))
+    (net (array (rename &_60__42_3_62_VDD "<*3>VDD") 3)
+	(joined
+	 (portList
+		(portRef A (instanceRef (member I31_60_2TO0_62_ 0)))
+		(portRef A (instanceRef (member I31_60_2TO0_62_ 1)))
+		(portRef A (instanceRef (member I31_60_2TO0_62_ 2))))
+	 (portList
+		(portRef ISO (instanceRef (member I31_60_2TO0_62_ 0)))
+		(portRef ISO (instanceRef (member I31_60_2TO0_62_ 1)))
+		(portRef ISO (instanceRef (member I31_60_2TO0_62_ 2))))
+	 (portList
+		(portRef VDD (instanceRef (member I31_60_2TO0_62_ 0)))
+		(portRef VDD (instanceRef (member I31_60_2TO0_62_ 1)))
+		(portRef VDD (instanceRef (member I31_60_2TO0_62_ 2))))
+	 (portList
+		(portRef INN (instanceRef (member I30_60_2TO0_62_ 0)))
+		(portRef INN (instanceRef (member I30_60_2TO0_62_ 1)))
+		(portRef INN (instanceRef (member I30_60_2TO0_62_ 2))))
+	 (portList
+		(portRef VDD (instanceRef (member I35_60_2TO0_62_ 0)))
+		(portRef VDD (instanceRef (member I35_60_2TO0_62_ 1)))
+		(portRef VDD (instanceRef (member I35_60_2TO0_62_ 2))))
+	 (portList
+		(portRef ISO (instanceRef (member I35_60_2TO0_62_ 0)))
+		(portRef ISO (instanceRef (member I35_60_2TO0_62_ 1)))
+		(portRef ISO (instanceRef (member I35_60_2TO0_62_ 2))))))
+    (net (array (rename net0126_60_0TO2_62_ "net0126<0:2>") 3)
+	(joined
+	 (portList
+		(portRef Y (instanceRef (member I34_60_2TO0_62_ 0)))
+		(portRef Y (instanceRef (member I34_60_2TO0_62_ 1)))
+		(portRef Y (instanceRef (member I34_60_2TO0_62_ 2))))
+	 (portList
+		(portRef noConn (instanceRef (member I40_60_2TO0_62_ 0)))
+		(portRef noConn (instanceRef (member I40_60_2TO0_62_ 1)))
+		(portRef noConn (instanceRef (member I40_60_2TO0_62_ 2)))))
+       (figure wire (path (pointList
+	 (pt 2000 -60) (pt 2040 -60)))))
+      (net net0108 (joined
+	 (portRef  Y (instanceRef I49)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 2000 240) (pt 2040 240)))))
+      (net PWD_BIAS_ST (joined
+	 (portRef  PWD_BIAS_ST)
+	 (portRef  Y (instanceRef I18)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1910 -820) (pt 1970 -820)))))
+      (net net0114 (joined
+	 (portRef  A (instanceRef I24))
+	 (portRef  Y (instanceRef I25)))
+       (criticality 0)
+       (figure wire (path (pointList
+	 (pt 1720 -1090) (pt 1790 -1090)))))))))))
